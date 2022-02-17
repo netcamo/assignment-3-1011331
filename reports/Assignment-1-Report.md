@@ -85,7 +85,7 @@ In Cassandra partitioning goes related to primary keys. Listings have unique id 
 
  ![Performance](Performance_0.5MB.jpg "Performance")
 
-        Failures occur because of chosen consistency. For our design QUORUM needs at least 2 replicas and ALL needs 3 replicas. If there aren't enough nodes working properly then data ingestion fails as expected. Solution  would be to add new nodes.
+    Failures occur because of chosen consistency. For our design QUORUM needs at least 2 replicas and ALL needs 3 replicas. If there aren't enough nodes working properly then data ingestion fails as expected. Solution  would be to add new nodes.
 
 
 
