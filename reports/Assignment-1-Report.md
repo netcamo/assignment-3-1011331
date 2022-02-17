@@ -92,17 +92,22 @@ In Cassandra partitioning goes related to primary keys. Listings have unique id 
 
 5. *Observing the performance and failure problems when you push a lot of data into mysimbdp-coredms (you do not need to worry about duplicated data in mysimbdp), propose the change of your deployment to avoid such problems (or explain why you do not have any problem with your deployment)*
 
-    I have pushed 200000 rows of data which is 20MB. First I have encountered problem with QUORUM and ALL consistency because my heap size for cassandra containers was not enough for such big data. SOlution was to allocate more RAM of my machine to cassandra containers and only after that I was able to push all my data into mysimbdp. Additionally I have noticed that before increasing hheap size my ingest function took **671.28s** to push data with consistency of ONE while after increasing the allocated memory my ingestion with same consistency level took only **454.58 s**. Below is resulsts of experiment:
+    I have pushed 200000 rows of data which is 20MB with 3 nodes. First I have encountered problem with QUORUM and ALL consistency because my heap size for cassandra containers was not enough for such big data. Solution was to allocate more RAM of my machine to cassandra containers and only after that I was able to push all my data into mysimbdp. Additionally I have noticed that before increasing hheap size my ingest function took **671.28s** to push data with consistency of ONE while after increasing the allocated memory my ingestion with same consistency level took only **454.58 s**. Below is resulsts of experiment:
 
     
-    ![Performance2](performance_20MB.jpg "Performance2")
+    ![Performance2](performance_20mb.jpg "Performance2")
 
 
 
-Part 3 Extension (weighted factor for grades = 1)
-Address the following points:
-1. Using your mysimdbp-coredms, a single tenant can create many different databases/datasets. Assume that you want to
-support the tenant to manage metadata about the databases/datasets, what would be your solution? (1 point)
+## Part 3 Extension 
+  ### Address the following points:
+
+
+1. *Using your mysimdbp-coredms, a single tenant can create many different databases/datasets. Assume that you want to support the tenant to manage metadata about the databases/datasets, what would be your solution?* 
+
+
+
+
 2. Assume that each of your tenants/users will need a dedicated mysimbdp-coredms. Design the data schema of service
 information for mysimbdp-coredms that can be published into an existing registry (like ZooKeeper, consul or etcd) so that
 you can find information about which mysimbdp-coredms is for which tenants/users (1 point)
