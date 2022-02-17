@@ -17,35 +17,47 @@
 2. *Design and explain interactions between main components in your architecture of mysimbdp*
 
 
-    ***INCLUDE SCHEMA PICTURE***
+  
+    ![Design Schema](Design_Schema.jpg "Design Schema")
 
-    For this purpose I will have 3 nodes of cassandra which will be docker containers. Main coredms component will take care of communication between databases and every other APIs and components. DAAS component will take care of traffic from Prodducers/Consumers that will communicate to it through REST APIs  implemented by FLASK and dataingest component will communicate to database through COREDMS component. 
+    For this purpose I will have 3 nodes of cassandra which will be docker containers. Main coredms component will take care of communication between databases and every other APIs and components. DAAS component will take care of traffic from Prodducers/Consumers that will communicate to it through REST APIs  implemented by FLASK and dataingest component will communicate to database through  COREDMS component .
 
 
 
 3. *Explain a configuration of a cluster of nodes for mysimbdp-coredms so that you prevent a single-point-of-failure problem for mysimbdp-coredms for your tenants* 
 
+    I have used replication factor of 3  while configuring Cassandra nodes so even if 2 nodes would fail for some reason, we would still have at least 1 replica in another node since replicas are stored in different nodes thus database would work as it should without any interruption.
 
+
+
+4. *You decide a pre-defined level of data replication for your tenants/customers. Explain how many nodes are needed in the deployment of mysimbdp-coredms for your choice so that this component can work property (e.g., the system still supports redundancy in the case of a failure of a node)*
+
+    Since I have defined replication factor of 3 then I should at least have  3 nodes in my deployment since replicas are stored in different nodes so I need to have nodes greater or equal than my replication factor.
+
+
+
+5. *Explain how would you scale mysimbdp to allow many tenants using mysimbdp-dataingest to push data into mysimbdp*
+
+    It is possible to scale my mysimbdp to allow many tenants in variety of ways. First of all we can scale DAAS using concurrent Docker containers to provide better load handling to serve many tenants. Moreover we can scale up Cassandra clusters and provide more nodes thus increasing our max replication factor capacity which would provide increased performance while handling big traffic from many tenants.
+
+
+
+## Part 2 - Implementation 
+### Address the following points:
+
+
+
+1. *Design, implement and explain one example of the data schema/structure for a tenant whose data will be stored into
+mysimbdp-coredms*
 
     
-    
 
 
 
 
 
-4. You decide a pre-defined level of data replication for your tenants/customers. Explain how many nodes are needed in the
-deployment of mysimbdp-coredms for your choice so that this component can work property (e.g., the system still supports
-redundancy in the case of a failure of a node) (1 point)
-5. Explain how would you scale mysimbdp to allow many tenants using mysimbdp-dataingest to push data into mysimbdp
 
-
-
-Part 2 - Implementation (weighted factor for grades = 2)
-Address the following points:
-1. Design, implement and explain one example of the data schema/structure for a tenant whose data will be stored into
-mysimbdp-coredms (1 point)
-2. Given the data schema/structure of the tenant (Part 2, Point 1), design a strategy for data partitioning/sharding and explain
+1. Given the data schema/structure of the tenant (Part 2, Point 1), design a strategy for data partitioning/sharding and explain
 your implementation for data partitioning/sharding together with your design for replication in Part 1, Point 4, in mysimbdpcoredms (1 point)
 3. Assume that you are the tenant, write a mysimbdp-dataingest that takes data from your selected sources and stores the
 data into mysimbdp-coredms. Explain possible consistency options for writing data in your mysimdbp-dataingest (1 point)
