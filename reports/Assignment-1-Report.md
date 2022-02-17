@@ -67,10 +67,10 @@ In Cassandra partitioning goes related to primary keys. Listings have unique id 
 
 3. *Assume that you are the tenant, write a mysimbdp-dataingest that takes data from your selected sources and stores the data into mysimbdp-coredms. Explain possible consistency options for writing data in your mysimdbp-dataingest*
 
-    I have python script called dataingest.py. It takes as arguments table name , datafile source and consistency (ONE, ALL, default is QUORUM ). Default option for consistency is QUORUM and in that case as our replication factor is 3 then write will have to be committed to at least 2 nodes. in case of ONE then write has to be made to at least 1 node and ALL means it has to be written to ALL nodes.
+    I have python script called dataingest.py. It takes as arguments table name , datafile source and consistency (ONE, ALL, QUORUM ). Default option for consistency is QUORUM and in that case as our replication factor is 3 then write will have to be committed to at least 2 nodes. in case of ONE then write has to be made to at least 1 node and ALL means it has to be written to ALL nodes.
     Script is used as :
 
-        python3 dataingest.py <Table_name> <file source> <Consistency (QUORUM is default if left blank)>
+        python3 dataingest.py <Table_name> <file source> <Consistency>
 
     Example:
 
