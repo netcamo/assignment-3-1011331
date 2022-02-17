@@ -83,7 +83,7 @@ In Cassandra partitioning goes related to primary keys. Listings have unique id 
     I have tried first 5000 rrows of data which was 0.5 MB with different number of nodes and different number of concurrent processes. The time performance is average time for data ingestion when n number of concurrent ingest processes work:
 
 
- ![Performance](Performance_0.5MB.jpg "Performance")
+    ![Performance](Performance_0.5MB.jpg "Performance")
 
     Failures occur because of chosen consistency. For our design QUORUM needs at least 2 replicas and ALL needs 3 replicas. If there aren't enough nodes working properly then data ingestion fails as expected. Solution  would be to add new nodes.
 
