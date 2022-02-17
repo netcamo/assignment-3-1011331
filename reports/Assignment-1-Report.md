@@ -79,15 +79,23 @@ In Cassandra partitioning goes related to primary keys. Listings have unique id 
 
 
 4. *Given your deployment environment, show the performance (response time and failure) of the tests for 1,5, 10, .., n of concurrent mysimbdp-dataingest writing data into mysimbdp-coredms with different speeds/velocities together with the change of the number of nodes of mysimbdp-coredms .Indicate any performance differences due to the choice of consistency options*
+ 
+    I have tried first 5000 rrows of data which was 0.5 MB with different number of nodes and different number of concurrent processes. The time performance is average time for data ingestion when n number of concurrent ingest processes work:
 
 
+ ![Performance](Performance_0.5MB.jpg "Performance")
+
+        Failures occur because of chosen consistency. For our design QUORUM needs at least 2 replicas and ALL needs 3 replicas. If there aren't enough nodes working properly then data ingestion fails as expected. Solution  would be to add new nodes.
 
 
 
 
 5. *Observing the performance and failure problems when you push a lot of data into mysimbdp-coredms (you do not need to worry about duplicated data in mysimbdp), propose the change of your deployment to avoid such problems (or explain why you do not have any problem with your deployment)*
 
+    I have pushed 200000 rows of data which is 20MB. First I have encountered problem with QUORUM and ALL consistency because my heap size for cassandra containers was not enough for such big data. SOlution was to allocate more RAM of my machine to cassandra containers and only after that I was able to push all my data into mysimbdp. Additionally I have noticed that before increasing hheap size my ingest function took **671.28s** to push data with consistency of ONE while after increasing the allocated memory my ingestion with same consistency level took only **454.58 s**. Below is resulsts of experiment:
 
+    
+    ![Performance2](performance_20MB.jpg "Performance2")
 
 
 
