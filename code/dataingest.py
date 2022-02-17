@@ -17,7 +17,7 @@ def ingestListings(datafile, session,consistency ):
     batch = BatchStatement(consistency_level=ConsistencyLevel.QUORUM)
     if(consistency =="ALL"):
         batch = BatchStatement(consistency_level=ConsistencyLevel.ALL)
-    if(consistency =="ONE") :
+    elif(consistency =="ONE") :
         batch = BatchStatement(consistency_level=ConsistencyLevel.ONE)
     
     #insertions = 0
