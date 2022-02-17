@@ -10,7 +10,7 @@ import datetime
 import argparse
 
 def ingestListings(datafile, session,consistency ):
-    #print("Starting batch load if listings entries...")
+
     query = session.prepare('INSERT INTO mysimbdp.listings (id,  host_id , host_name,  neighbourhood ,latitude ,longitude, room_type , price , availability_365 ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)')
 
 
@@ -20,14 +20,12 @@ def ingestListings(datafile, session,consistency ):
     elif(consistency =="ONE") :
         batch = BatchStatement(consistency_level=ConsistencyLevel.ONE)
     
-    #insertions = 0
     with open(datafile) as csv_file:
         reader = csv.reader(csv_file, delimiter=',')
         next(csv_file)
 
         insertions=0
         for row in reader:
-            
             try:
                 id=int(row[0])
                 host_id=int(row[1])
@@ -39,27 +37,18 @@ def ingestListings(datafile, session,consistency ):
                 price=int(row[7])
                 availability_365=int(row[8])
                 batch.add(query,
-                 (id,  host_id , host_name,  neighbourhood ,latitude ,longitude,
+                 (id,  host_id , host_name,  neighbourhood ,
+                 latitude ,longitude,
                   room_type , price , availability_365 )
-                #   (int(row[0]),int(row[1]),row[2], row[3],
-                #         float(row[4]),float(row[5]),row[6],
-                #         int(row[7]),int(row[8]))
                   )
                 
             except Exception as e:
                 print('The cassandra error: {}'.format(e))
-
-           
-           
-           
-            
             try:
                 session.execute(batch)
-                batch.clear()
-                #insertions += 1
-                insertions+=1
-                #print("Success")
-                if(insertions==200000):
+                batch.clear()              
+                insertions+=1    
+                if(insertions==200000): # to read only 200000 rows which is approx 20 mb
                     break 
                 
             except Exception as e:
@@ -77,8 +66,7 @@ if __name__ == "__main__":
     datafile = sys.argv[2]
     consistency=sys.argv[3]
     start=time()
-    if table == "listings":
-	    insertions = ingestListings(datafile, session,consistency)
+	insertions = ingestListings(datafile, session,consistency)
 
     stop=time()
 

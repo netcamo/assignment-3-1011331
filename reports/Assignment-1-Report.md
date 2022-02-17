@@ -67,15 +67,15 @@ In Cassandra partitioning goes related to primary keys. Listings have unique id 
 
 3. *Assume that you are the tenant, write a mysimbdp-dataingest that takes data from your selected sources and stores the data into mysimbdp-coredms. Explain possible consistency options for writing data in your mysimdbp-dataingest*
 
-    I have python script called dataingest.py. It takes as arguments table name , datafile source and consistency (ONE, ALL, QUORUM ). Default option for consistency is QUORUM and in that case as our replication factor is 3 then write will have to be committed to at least 2 nodes. in case of ONE then write has to be made to at least 1 node and ALL means it has to be written to ALL nodes.
+    I have python script called dataingest.py. It takes as arguments  datafile source and consistency (ONE, ALL, QUORUM ). Default option for consistency is QUORUM and in that case as our replication factor is 3 then write will have to be committed to at least 2 nodes. in case of ONE then write has to be made to at least 1 node and ALL means it has to be written to ALL nodes.
     Script is used as :
 
-        python3 dataingest.py <Table_name> <file source> <Consistency>
+        python3 dataingest.py  <file source> <Consistency>
 
     Example:
 
-        python3 dataingest.py listings ../data/data_BIG.csv 
-        python3 dataingest.py listings ../data/data_BIG.csv ALL
+        python3 dataingest.py ../data/data_BIG.csv QUORUM
+        python3 dataingest.py ../data/data_BIG.csv ALL
 
 
 4. *Given your deployment environment, show the performance (response time and failure) of the tests for 1,5, 10, .., n of concurrent mysimbdp-dataingest writing data into mysimbdp-coredms with different speeds/velocities together with the change of the number of nodes of mysimbdp-coredms .Indicate any performance differences due to the choice of consistency options*
@@ -92,7 +92,7 @@ In Cassandra partitioning goes related to primary keys. Listings have unique id 
 
 5. *Observing the performance and failure problems when you push a lot of data into mysimbdp-coredms (you do not need to worry about duplicated data in mysimbdp), propose the change of your deployment to avoid such problems (or explain why you do not have any problem with your deployment)*
 
-    I have pushed 200000 rows of data which is 20MB with 3 nodes. First I have encountered problem with QUORUM and ALL consistency because my heap size for cassandra containers was not enough for such big data. Solution was to allocate more RAM of my machine to cassandra containers and only after that I was able to push all my data into mysimbdp. Additionally I have noticed that before increasing hheap size my ingest function took **671.28s** to push data with consistency of ONE while after increasing the allocated memory my ingestion with same consistency level took only **454.58 s**. Below is resulsts of experiment:
+    I have pushed 200000 rows of data which is 20MB with 3 nodes. First I have encountered problem with QUORUM and ALL consistency because my heap size for cassandra containers was not enough for such big data. Solution was to allocate more RAM of my machine to cassandra containers and only after that I was able to push all my data into mysimbdp. Additionally I have noticed that before increasing hheap size my ingest function took **671.28s** to push data with consistency of ONE while after increasing the allocated memory my ingestion with same consistency level took only **454.58 s**. In the start I have allocated new heap size of 1 M and max heap size of 512M but I have increased them to 40M and 1024 M accordingly.  Below is resulsts of experiment:
 
     
     ![Performance2](performance_20mb.jpg "Performance2")
@@ -108,24 +108,16 @@ In Cassandra partitioning goes related to primary keys. Listings have unique id 
 
 
 
-2. Assume that each of your tenants/users will need a dedicated mysimbdp-coredms. Design the data schema of service
-information for mysimbdp-coredms that can be published into an existing registry (like ZooKeeper, consul or etcd) so that
-you can find information about which mysimbdp-coredms is for which tenants/users (1 point)
-3. Explain how you would change the implementation of mysimbdp-dataingest (in Part 2) to integrate a service discovery
-feature (no implementation is required) (1 point)
-4. Assume that now only mysimbdp-daas can read and write data into mysimbdp-coredms, how would you change your
-mysimbdp-dataingest (in Part 2) to work with mysimbdp-daas? (1 point)
-5. Assume that you design APIs for mysimbdp-daas so that any other developer who wants to implement mysimbdpdataingest can write his/her own ingestion program to write the data into mysimbdp-coredms by calling mysimbdp-daas.
-Explain how would you control the data volume and speed in writing and reading operations for a tenant? (1 point)
-You will address the above-mentioned points by writing them into the design document (template: Assignment-1-
-Report.md, see the git assignment template) and provide source files.
-Using the template: Assignment-1-Deployment.md (see the git assignment template) for describing how to run/deploy
-your code, whereas code/scripts and logs will be organized into appropriate directories.
-4 Other notes
-Remember that we need to reproduce your work. Thus:
-Remember to include the (adapted) deployment scripts/code you used for your installation/deployment
-Explain steps that one can follow in doing the deployment (e.g. using which version of which databases)
-Include logs to show successful or failed tests/deployments
-Include git logs to show that you have incrementally solved questions in the assignment
-etc.
-You can check some hints of how to succeed in big data platforms assignments
+2. *Assume that each of your tenants/users will need a dedicated mysimbdp-coredms. Design the data schema of service information for mysimbdp-coredms that can be published into an existing registry (like ZooKeeper, consul or etcd) so that you can find information about which mysimbdp-coredms is for which tenants/users*
+
+
+
+3. *Explain how you would change the implementation of mysimbdp-dataingest (in Part 2) to integrate a service discovery feature (no implementation is required)*
+
+
+
+4. *Assume that now only mysimbdp-daas can read and write data into mysimbdp-coredms, how would you change your mysimbdp-dataingest (in Part 2) to work with mysimbdp-daas?* 
+
+
+
+5. *Assume that you design APIs for mysimbdp-daas so that any other developer who wants to implement mysimbdpdataingest can write his/her own ingestion program to write the data into mysimbdp-coredms by calling mysimbdp-daas. Explain how would you control the data volume and speed in writing and reading operations for a tenant?*
