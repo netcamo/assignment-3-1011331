@@ -9,12 +9,17 @@ from time import time
 import datetime
 import argparse
 
-def ingestListings(datafile, session, ):
+def ingestListings(datafile, session,consistency ):
     #print("Starting batch load if listings entries...")
     query = session.prepare('INSERT INTO mysimbdp.listings (id,  host_id , host_name,  neighbourhood ,latitude ,longitude, room_type , price , availability_365 ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)')
 
 
     batch = BatchStatement(consistency_level=ConsistencyLevel.QUORUM)
+    if(consistency =="ALL"):
+        batch = BatchStatement(consistency_level=ConsistencyLevel.ALL)
+    if(consistency =="ONE") :
+        batch = BatchStatement(consistency_level=ConsistencyLevel.ONE)
+    
     #insertions = 0
     with open(datafile) as csv_file:
         reader = csv.reader(csv_file, delimiter=',')
@@ -70,10 +75,10 @@ if __name__ == "__main__":
 
     table = sys.argv[1]
     datafile = sys.argv[2]
-
+    consistency=sys.argv[3]
     start=time()
     if table == "listings":
-	    insertions = ingestListings(datafile, session)
+	    insertions = ingestListings(datafile, session,consistency)
 
     stop=time()
 

@@ -26,7 +26,8 @@
 
 3. *Explain a configuration of a cluster of nodes for mysimbdp-coredms so that you prevent a single-point-of-failure problem for mysimbdp-coredms for your tenants* 
 
-    I have used replication factor of 3  while configuring Cassandra nodes so even if 2 nodes would fail for some reason, we would still have at least 1 replica in another node since replicas are stored in different nodes thus database would work as it should without any interruption.
+
+    I have used replication factor of 3  while configuring Cassandra nodes so even if 2 nodes would fail for some reason, we would still have at least 1 replica in another node since replicas are stored in different nodes thus database would work as it should without any interruption. In Cassandra there is no main node and all nodes work in peer-to-peer way so no node failure would cause any problem for us while at least 1 node is working.
 
 
 
@@ -43,34 +44,51 @@
 
 
 ## Part 2 - Implementation 
-### Address the following points:
-
+### Address the following points
 
 
 1. *Design, implement and explain one example of the data schema/structure for a tenant whose data will be stored into
 mysimbdp-coredms*
 
-    
+    I have decided to use Airbnb listings data. In my implementation it consists of 9 columns as its schema will be illustrated below and I have multiple versions of this data with different number of rows ranging from 5500 to 23000000 rows and its size is ranging between 0.5mb  up to 2 GB.
+
+| ID      | HostId | Host_name      | neighbourhood | Latitude      | Longitude | Room_type      | Price | Availability_365  | 
+| ----------- | ----------- | ----------- | ----------- | ----------- | ----------- | ----------- | ----------- | ----------- |
+| Listing Id -  Integer      |  Integer    |text    | text    | float    | Float    |  text    | Integer    |Availability - Integer   |
+
+
+
+In this data schema Listing ID can be used as primary key as it is unique for the listing.
+
+2. *Given the data schema/structure of the tenant (Part 2, Point 1), design a strategy for data partitioning/sharding and explain your implementation for data partitioning/sharding together with your design for replication in Part 1, Point 4, in mysimbdpcoredms*
+
+In Cassandra partitioning goes related to primary keys. Listings have unique id but one Host can have many listings so it is better to partition it by host_id s  one another proposal could be to partition data related to the neigbourhoods. I will go with first choice.
+
+
+3. *Assume that you are the tenant, write a mysimbdp-dataingest that takes data from your selected sources and stores the data into mysimbdp-coredms. Explain possible consistency options for writing data in your mysimdbp-dataingest*
+
+    I have python script called dataingest.py. It takes as arguments table name , datafile source and consistency (ONE, ALL, default is QUORUM ). Default option for consistency is QUORUM and in that case as our replication factor is 3 then write will have to be committed to at least 2 nodes. in case of ONE then write has to be made to at least 1 node and ALL means it has to be written to ALL nodes.
+    Script is used as :
+
+        python3 dataingest.py <Table_name> <file source> <Consistency (QUORUM is default if left blank)>
+
+    Example:
+
+        python3 dataingest.py listings ../data/data_BIG.csv 
+        python3 dataingest.py listings ../data/data_BIG.csv ALL
+
+
+4. *Given your deployment environment, show the performance (response time and failure) of the tests for 1,5, 10, .., n of concurrent mysimbdp-dataingest writing data into mysimbdp-coredms with different speeds/velocities together with the change of the number of nodes of mysimbdp-coredms .Indicate any performance differences due to the choice of consistency options*
 
 
 
 
 
 
-1. Given the data schema/structure of the tenant (Part 2, Point 1), design a strategy for data partitioning/sharding and explain
-your implementation for data partitioning/sharding together with your design for replication in Part 1, Point 4, in mysimbdpcoredms (1 point)
-3. Assume that you are the tenant, write a mysimbdp-dataingest that takes data from your selected sources and stores the
-data into mysimbdp-coredms. Explain possible consistency options for writing data in your mysimdbp-dataingest (1 point)
-4. Given your deployment environment, show the performance (response time and failure) of the tests for 1,5, 10, .., n of
-concurrent mysimbdp-dataingest writing data into mysimbdp-coredms with different speeds/velocities together with the
-change of the number of nodes of mysimbdp-coredms. Indicate any performance differences due to the choice of
-consistency options (1 point)
-5. Observing the performance and failure problems when you push a lot of data into mysimbdp-coredms (you do not need to
-worry about duplicated data in mysimbdp), propose the change of your deployment to avoid such problems (or explain why
-you do not have any problem with your deployment) (1 point)
-Note: in the implementation, we do not require you to implement mysimbdp-daas. It is up to you to decide. Furthermore,
-a condition in performance testing is to also change the number of nodes of mysimbdp-coredms. Therefore, if you use
-public cloud deployment of your selected databases, you must be able to manipulate the number of nodes.
+5. *Observing the performance and failure problems when you push a lot of data into mysimbdp-coredms (you do not need to worry about duplicated data in mysimbdp), propose the change of your deployment to avoid such problems (or explain why you do not have any problem with your deployment)*
+
+
+
 
 
 Part 3 Extension (weighted factor for grades = 1)
