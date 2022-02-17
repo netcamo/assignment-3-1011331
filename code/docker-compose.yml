@@ -2,8 +2,8 @@ version: '3.4'
 x-cassandra: &cassandras
   CASSANDRA_CLUSTER_NAME: assignment1
   CASSANDRA_SEEDS: cassandra1
-  HEAP_NEWSIZE: 1M
-  MAX_HEAP_SIZE: 512M
+  HEAP_NEWSIZE: 40M
+  MAX_HEAP_SIZE: 1024M
   CASSANDRA_ENDPOINT_SNITCH: GossipingPropertyFileSnitch
     
 x-expose: &exposes
