@@ -1,0 +1,77 @@
+commit e3d125b663931ff2f31f77c28101b5bbd341906a
+Author: yagublj1 <jeyhun.yagublu@aalto.fi>
+Date:   Thu Feb 17 22:37:10 2022 +0200
+
+    report
+
+commit 3df8321f0380ba465f114571f9ce311809d7cc0c
+Author: yagublj1 <jeyhun.yagublu@aalto.fi>
+Date:   Thu Feb 17 22:01:52 2022 +0200
+
+    report
+
+commit dcb53bf7ec482bd949759f759e7fe4c29079a6f7
+Author: yagublj1 <jeyhun.yagublu@aalto.fi>
+Date:   Thu Feb 17 22:01:03 2022 +0200
+
+    report
+
+commit 1a8657123de08e00dbd3a533eb9fb35c64e0e423
+Author: yagublj1 <jeyhun.yagublu@aalto.fi>
+Date:   Thu Feb 17 22:00:40 2022 +0200
+
+    report
+
+commit 5dbb51eeee8a0921d35d5ebc50b095b1eec8b30b
+Author: yagublj1 <jeyhun.yagublu@aalto.fi>
+Date:   Thu Feb 17 21:57:57 2022 +0200
+
+    report
+
+commit 1640774fc978f1eaeddf13b2c107738a89e08935
+Author: yagublj1 <jeyhun.yagublu@aalto.fi>
+Date:   Thu Feb 17 21:09:18 2022 +0200
+
+    increased Heap size of casandra containers
+
+commit 98713a33bfa60cd7081e819f7d55a0e1807e8deb
+Author: yagublj1 <jeyhun.yagublu@aalto.fi>
+Date:   Thu Feb 17 19:00:18 2022 +0200
+
+    some changes
+
+commit 6933f2dba16b1268b2280878f03cd77fba02449b
+Author: yagublj1 <jeyhun.yagublu@aalto.fi>
+Date:   Thu Feb 17 16:53:55 2022 +0200
+
+    code change
+
+commit d36010c0ac9c83d6d5df81abfb3147531d9250db
+Author: yagublj1 <jeyhun.yagublu@aalto.fi>
+Date:   Thu Feb 17 16:53:24 2022 +0200
+
+    more report
+
+commit cccb07cc0381953c9bc855b91ade917f953a790e
+Author: yagublj1 <jeyhun.yagublu@aalto.fi>
+Date:   Thu Feb 17 15:21:48 2022 +0200
+
+    further report
+
+commit a9f4cc3fa584c7728ea9f5a6bf87eac9a2fd378e
+Author: yagublj1 <jeyhun.yagublu@aalto.fi>
+Date:   Wed Feb 16 23:56:45 2022 +0200
+
+    inital report
+
+commit e066446e9ed206c2d83a683f0d443b23c7a694ad
+Author: yagublj1 <jeyhun.yagublu@aalto.fi>
+Date:   Wed Feb 16 21:17:21 2022 +0200
+
+    designed and implemented coredms and data ingest , maybe need some changes
+
+commit 6aa9b40b11e1ba8d12cb4ac4b1c274bca1dcc0a2
+Author: yagublj1 <jeyhun.yagublu@aalto.fi>
+Date:   Tue Feb 15 18:14:10 2022 +0200
+
+    Added my project
