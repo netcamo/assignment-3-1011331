@@ -105,19 +105,41 @@ In Cassandra partitioning goes related to primary keys. Listings have unique id 
 
 1. *Using your mysimdbp-coredms, a single tenant can create many different databases/datasets. Assume that you want to support the tenant to manage metadata about the databases/datasets, what would be your solution?* 
 
+    Since our tenants uses mysimbdp-coredms by connecting to DAAS APIs then one solution would be to extend its functionality to allow tenant perform different queries to manage metadata about his databases. We could store information about each database that tenant owns so that we can perform checks and allow/forbid database management if tenant doesn't own it. We could create another component which only takes care of this access management.
 
 
 
 2. *Assume that each of your tenants/users will need a dedicated mysimbdp-coredms. Design the data schema of service information for mysimbdp-coredms that can be published into an existing registry (like ZooKeeper, consul or etcd) so that you can find information about which mysimbdp-coredms is for which tenants/users*
 
+    ZooKeeper is a centralized service for maintaining configuration information, naming, providing distributed synchronization, and providing group services. All of these kinds of services are used in some form or another by distributed applications.
+
+    My simple data schema would be following:
+
+    | ID  | TenantID    | TenantName | IP | Port |  
+    | ----------- |  ----------- |   ----------- |   ----------- |   ----------- | 
+    | UUID  | UUID | TenantName | text | integer | 
+
 
 
 3. *Explain how you would change the implementation of mysimbdp-dataingest (in Part 2) to integrate a service discovery feature (no implementation is required)*
 
+    Service Discovery has the ability to locate a network automatically making it so that there is no need for a long configuration set up process. Service discovery works by devices connecting through a common language on the network allowing devices or services to connect without any manual intervention.
+
+    There are three components to Service Discovery: the service provider, the service consumer and the service registry.
+   1) The Service Provider registers itself with the service registry when it enters the system and de-registers itself when it leaves the system.
+
+   2) The Service Consumer gets the location of a provider from the service registry, and then connects it to the service provider.
+
+   3) The Service Registry is a database that contains the network locations of service instances. The service registry needs to be highly available and up to date so clients can go through network locations obtained from the service registry. A service registry consists of a cluster of servers that use a replication protocol to maintain consistency. 
+
+    Thus we could use ApacheZookepper or other registries in similar way to previous question's answer so that dataingest and other components register themselves in the registry and share information about them.
 
 
 4. *Assume that now only mysimbdp-daas can read and write data into mysimbdp-coredms, how would you change your mysimbdp-dataingest (in Part 2) to work with mysimbdp-daas?* 
 
+    We should change data ingest in such a way that it doesnt perform write operation itself but rather communicates to DAAS through one of its APIs to provide data that is needed to be written to mysimbdp-coredms. Inn this case data ingest would only get the data from source, perform some operations on it to prepare data for DAAS API and then send it for DAAS to perform the write operation.
 
 
 5. *Assume that you design APIs for mysimbdp-daas so that any other developer who wants to implement mysimbdpdataingest can write his/her own ingestion program to write the data into mysimbdp-coredms by calling mysimbdp-daas. Explain how would you control the data volume and speed in writing and reading operations for a tenant?*
+
+    Since our DAAS will take care of write and read operations then we could control the batch sizes, speed of writing etc directly in DAAS itself and we could store all limitations depending on specific tenant in a registry.
