@@ -1,6 +1,10 @@
 # Assignment 1  1011331
 
-> Guide line: This is the file where you will explain the structure of your assignment delivery. Remember to replace **Assignment_NR** with the number of the assignment (e.g., 1, 2, 3, or 4) and **Your_STUDENTID** with your student number. Remove all guidelines from the template.
+In directory Code you will find all the code related to the project.
+
+Folder Data  provides small data and link to GIGA data.
+Reports Folder contains all report and also instruction on Deployment.
+
 
 
 
