@@ -62,9 +62,8 @@ if __name__ == "__main__":
     cluster = Cluster(['0.0.0.0'],port=9042)
     session = cluster.connect()
 
-    table = sys.argv[1]
-    datafile = sys.argv[2]
-    consistency=sys.argv[3]
+    datafile = sys.argv[1]
+    consistency=sys.argv[2]
     start=time()
 	insertions = ingestListings(datafile, session,consistency)
 
