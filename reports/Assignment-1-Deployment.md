@@ -18,13 +18,13 @@ next step would be to try  dataingest.py function.  dataingest function takes as
 
 For example :
 
-        python3 dataingest.py listings ../data/data.csv ONE
+        python3 dataingest.py  ../data/data.csv ONE
 
 
 ***One note**: if you want to check GIGA data then you need to increase heap size in docker-compose file. My machine wouldn't support that huge heap so I haven't allocated it in my docker compose file.*
 
 To use many ingest processes concurrently use  *&* :
 
-    python3 dataingest.py listings ../data/data.csv ONE & python3 dataingest.py listings ../data/data.csv ONE &
+    python3 dataingest.py  ../data/data.csv ONE & python3 dataingest.py  ../data/data.csv ONE &
 
 Performance times will be shown automatically after process finish . 
