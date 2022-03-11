@@ -13,3 +13,16 @@
      ]
 
 }
+
+{
+    "ingestion_type": "batch",
+    "valid_file_formats": ["csv"]
+}
+
+{
+    "tenant_id": "tenant_xxxxx",
+    "ingestion_type": "batch",
+    "max_columns_per_table": 1000,
+    "max_file_size_GB": 1,
+    "max_row_size_MB": 5,
+}
