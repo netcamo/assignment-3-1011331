@@ -1,28 +1,9 @@
 {
-    "cluster_address": "192.168.1.7",
-    "ingestion_index": "customer1",
     "ingestion_type": "batch",
-    "filename_prefix": "ingest",
-    "accepted_filetypes": ["csv"],
-    "max_filesize_MB": 10,
-    "fields": [
-     {"name": "part_id", "type": "int"},
-     {"name": "ts_date", "type": "int"},
-     {"name": "ts_time", "type": "string"},
-     {"name": "room", "type": "string"}
-     ]
-
-}
-
-{
-    "ingestion_type": "batch",
-    "valid_file_formats": ["csv"]
-}
-
-{
-    "tenant_id": "tenant_xxxxx",
-    "ingestion_type": "batch",
-    "max_columns_per_table": 1000,
+    "valid_file_formats": ["csv"],
     "max_file_size_GB": 1,
     "max_row_size_MB": 5,
+    "tenant_id": "tenant_xxxxx",
+    "max_file_number": 4,
 }
+
