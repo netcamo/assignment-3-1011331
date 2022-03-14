@@ -1,9 +1,0 @@
-{
-    "ingestion_type": "batch",
-    "valid_file_formats": ["csv"],
-    "max_file_size_GB": 1,
-    "max_row_size_MB": 5,
-    "tenant_id": "tenant_xxxxx",
-    "max_file_number": 4,
-}
-

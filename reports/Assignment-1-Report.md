@@ -1,20 +1,19 @@
 # Jeyhun Yagublu Assignment Report
 
-## Part 1 - Design
+## Part 1 - Batch data ingestion
 
-1. *Explain your choice of types of data to be supported and technologies for*  ***mysimbdp-coredms***
+1. *The ingestion will be applied to files of data. Design a set of constraints for files that mysimbdp will support for ingestion.
+Design a set of constraints for the tenant service profile w.r.t. ingestion (e.g., maximum number of files and amount of data).
+Explain why you as a platform provider decide such constraints. Implement these constraints into simple configuration files
+and provide examples (e.g., JSON or YAML).* 
     
 
-    I have decided to use Airbnb Listings data for my design since it can include huge amount of data and airbnb is one of the widely used platforms which needs to use their data efficiently. This data is a tabular data consisting different types of data (numerical,textual etc) as its columns and can span to billions of rows. 
-    
-    I have decided to use Cassandra as my data storage given its capabilities and successful implementations on similar big data platforms. It is scalable and  can reliable work even when there are failures in some components. Moreover it can reliable work under heavy load when multiple Consumers and Producers need it concurrently. I will use cassandra containers in Docker to implement all needed functionality.
+   
 
-    I decided to implement cassandra setup and configuration using Python and this setup can be accessed using REST API through Python FLASK.
+   
 
 
-
-
-2. *Design and explain interactions between main components in your architecture of mysimbdp*
+1. *Design and explain interactions between main components in your architecture of mysimbdp*
 
 
   
@@ -24,20 +23,20 @@
 
 
 
-3. *Explain a configuration of a cluster of nodes for mysimbdp-coredms so that you prevent a single-point-of-failure problem for mysimbdp-coredms for your tenants* 
+2. *Explain a configuration of a cluster of nodes for mysimbdp-coredms so that you prevent a single-point-of-failure problem for mysimbdp-coredms for your tenants* 
 
 
     I have used replication factor of 3  while configuring Cassandra nodes so even if 2 nodes would fail for some reason, we would still have at least 1 replica in another node since replicas are stored in different nodes thus database would work as it should without any interruption. In Cassandra there is no main node and all nodes work in peer-to-peer way so no node failure would cause any problem for us while at least 1 node is working.
 
 
 
-4. *You decide a pre-defined level of data replication for your tenants/customers. Explain how many nodes are needed in the deployment of mysimbdp-coredms for your choice so that this component can work property (e.g., the system still supports redundancy in the case of a failure of a node)*
+3. *You decide a pre-defined level of data replication for your tenants/customers. Explain how many nodes are needed in the deployment of mysimbdp-coredms for your choice so that this component can work property (e.g., the system still supports redundancy in the case of a failure of a node)*
 
     Since I have defined replication factor of 3 then I should at least have  3 nodes in my deployment since replicas are stored in different nodes so I need to have nodes greater or equal than my replication factor.
 
 
 
-5. *Explain how would you scale mysimbdp to allow many tenants using mysimbdp-dataingest to push data into mysimbdp*
+4. *Explain how would you scale mysimbdp to allow many tenants using mysimbdp-dataingest to push data into mysimbdp*
 
     It is possible to scale my mysimbdp to allow many tenants in variety of ways. First of all we can scale DAAS using concurrent Docker containers to provide better load handling to serve many tenants. Moreover we can scale up Cassandra clusters and provide more nodes thus increasing our max replication factor capacity which would provide increased performance while handling big traffic from many tenants.
 

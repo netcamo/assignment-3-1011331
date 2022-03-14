@@ -6,6 +6,8 @@ import sys
 from time import time
 KEYSPACE="mysimbdp"
 
+
+
 if __name__ == "__main__":
    
     if (sys.argv[1])=="setup_cassandra":
@@ -20,24 +22,24 @@ if __name__ == "__main__":
                             CREATE KEYSPACE IF NOT EXISTS mysimbdp
                             WITH replication = { 'class': 'SimpleStrategy', 'replication_factor': '3' }
                             """ )
-                session.set_keyspace("mysimbdp")
+                # session.set_keyspace("mysimbdp")
 
-                session.execute(""" DROP TABLE IF EXISTS listings """)
+                # session.execute(""" DROP TABLE IF EXISTS listings """)
 
-                session.execute("""
-                            CREATE TABLE IF NOT EXISTS listings (
-                                id int,
-                                host_id int,
-                                host_name text,
-                                neighbourhood text,
-                                latitude float,
-                                longitude float, 
-                                room_type text,
-                                price int,
-                                availability_365 int,
-                                PRIMARY KEY (host_id, id)
-                            )
-                            """)
+                # session.execute("""
+                #             CREATE TABLE IF NOT EXISTS listings (
+                #                 id int,
+                #                 host_id int,
+                #                 host_name text,
+                #                 neighbourhood text,
+                #                 latitude float,
+                #                 longitude float, 
+                #                 room_type text,
+                #                 price int,
+                #                 availability_365 int,
+                #                 PRIMARY KEY (host_id, id)
+                #             )
+                #             """)
                 print("Keyspace have been created!")
             except Exception as e:
                 print(e)

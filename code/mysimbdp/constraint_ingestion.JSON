@@ -1,0 +1,18 @@
+[
+    {
+        "ingestion_type": "batch",
+        "valid_file_format": "csv",
+        "max_file_size_GB": 1,
+        "max_row_size_MB": 5,
+        "tenant_id": "tenant_1",
+        "max_file_number": 4
+    },
+    {
+        "ingestion_type": "batch",
+        "valid_file_format": "csv",
+        "max_file_size_GB": 1,
+        "max_row_size_MB": 5,
+        "tenant_id": "tenant_2",
+        "max_file_number": 4
+    }
+]
