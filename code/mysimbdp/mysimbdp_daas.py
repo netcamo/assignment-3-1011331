@@ -18,23 +18,23 @@ def check():
 
 @app.route('/<tenant_id>/create_table', methods=['POST'])
 def create_table(tenant_id):
-  # check request method
+  
   if request.method != 'POST':
     return jsonify({'msg': 'Incorrect request method'}), 400
 
-  # get requset payload
+ 
   table = request.json.get('table', None)
   if not table:
     return jsonify({'msg': 'Missing parameter'}), 400
 
-  # prepare cql sentence
+  
   columns = ','.join(['{} {}'.format(item['field'], item['type']) for item in table['schema']])+ ', PRIMARY KEY ({})'.format(','.join(item for item in table['primary_key']))
   print("yeeey")
   
   cluster = Cluster(['0.0.0.0'],port=9042)
   session = cluster.connect()
   print("Have connected")
-  print("Teanat_id is "+tenant_id)      
+  print("Tenant_id is "+tenant_id)      
   try:
        
         session.execute("CREATE KEYSPACE IF NOT EXISTS {} WITH replication = {{ \'class\': \'SimpleStrategy\', \'replication_factor\': \'3\' }}".format(tenant_id) )
@@ -53,19 +53,20 @@ def create_table(tenant_id):
 
 @app.route('/<tenant_id>/batch_ingest', methods=['POST'])
 def batch_ingest(tenant_id):
-  # check request method
+  
   if request.method != 'POST':
     return jsonify({'msg': 'Incorrect request method'}), 400
   if not request.is_json:
     return jsonify({"msg": "Missing JSON in request"}), 400
 
-  # get request payload
+  
   table_name = request.json.get('table_name', None)
   rows = request.json.get('rows', None)
 
-  # connect cassandra
+  
   cluster = Cluster(['0.0.0.0'],port=9042)
   session = cluster.connect()
+
   batch = BatchStatement(consistency_level=ConsistencyLevel.QUORUM)
 
   count = 0
@@ -73,12 +74,9 @@ def batch_ingest(tenant_id):
   for row in rows:
     keys = row.keys()
     fields = ",".join([item for item in keys])
-    # cql = "INSERT INTO {}.{} ({}) VALUES ({})".format(tenant_id, table_name, fields, values)
     insert_stmt ="INSERT INTO {}.{} ({}) VALUES ({})".format(tenant_id, table_name, fields, ",".join(["%s" for item in keys]))
-    # session.execute(insert_stmt, [row[item] for item in keys])
     batch.add(insert_stmt, [row[item] for item in keys])
     count+=1
-  # insert every 50 rows
   session.execute(batch)
   batch.clear()
   return jsonify({'msg': 'success', "rows": count}), 200

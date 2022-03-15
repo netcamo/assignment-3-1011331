@@ -17,12 +17,9 @@ class Handler(FileSystemEventHandler):
         super(Handler, self).__init__(**kwargs)
     
     def on_created(self, event):
-        # The directory structure is designed as:
-        # 'client-staging-input-directory/tenant_id/table/data_files.csv'
 
-        if event.is_directory:  # new directory detected
-            # If the 2nd directory from last is 'client-staging-input-directory',
-            # it means it is a new tenant directory.
+        if event.is_directory:
+           
             if event.src_path.split('/')[-2] == 'client-staging-input-directory':
                 new_tenant = event.src_path.split('/')[-1]
                 logger.info("New tenant detected: %s" % new_tenant)
@@ -34,9 +31,7 @@ class Handler(FileSystemEventHandler):
                 
                 print("[BatchIngestManager] New table %s detected for   %s" % (new_table, tenant))    
 
-        else:  # new file detected
-            # If the 4th directory from last is 'client-staging-input-directory',
-            # it means it is a new data file that should be ingestd
+        else:  
             print("New file detected")
             if event.src_path.split('/')[-4] == 'client-staging-input-directory':
                 tenant_id = event.src_path.split('/')[-3]
@@ -53,13 +48,12 @@ class Handler(FileSystemEventHandler):
                         for constraint in constraints:
                             if tenant_id == constraint['tenant_id']:
                                 break
-                        if(constraint=None):
+                        if(constraint==None):
                             print("Tenant doesn't exist or have no access!")
                             logger.info("Tenant doesn't exist or have no access!")
 
-                        elif ( event.src_path.endswith(constraint["valid_file_format"])) and (os.path.getsize(event.src_path) <= int(constraint["max_file_size_GB"])*1024*1024*1024):
-                            
-                            # invoke the customer's batchingestapp.py
+                        elif ( event.src_path.endswith(constraint["valid_file_format"])) and (os.path.getsize(event.src_path) <= int(constraint["max_file_size_MB"])*1024*1024):
+
                             os.system("python3 {current}/../client_ingest_apps/{tenant_id}/clientbatchingestapp.py {table_name} {file_name}".format(current=CURRENT_DIRECTORY, tenant_id=tenant_id, table_name=table_name, file_name=file_name))
                         else:
                             print("New tenant file is not consistent with its constraints!")
