@@ -196,18 +196,46 @@ individual tenants and for the whole platform with your tests.*
 ## Part 2 - Near-realtime data ingestion
 
 
+1. *Tenants will put their data into messages and send the messages to a messaging system, mysimbdp-messagingsystem
+(provisioned by mysimbdp) and tenants will develop ingestion programs, clientstreamingestapp, which read data from the
+messaging system and ingest the data into mysimbdp-coredms. For near-realtime ingestion, explain your design for the
+multi-tenancy model in mysimbdp: which parts of the mysimbdp will be shared for all tenants, which parts will be dedicated
+for individual tenants so that mysimbdp can add and remove tenants based on the principle of pay-per-use. Design and
+explain a set of constraints for the tenant service profile w.r.t. data ingestion.* 
+
+2. *Design and implement a component mysimbdp-streamingestmanager, which can start and stop clientstreamingestapp
+instances on-demand. mysimbdp imposes the model that clientstreamingestapp has to follow so that mysimbdpstreamingestmanager can invoke clientstreamingestapp as a blackbox, explain the model.* 
+
+3. *Develop test ingestion programs (clientstreamingestapp), test data, and test service profiles for tenants. Show the
+performance of ingestion tests, including failures and exceptions, for at least 2 different tenants in your test environment.
+What is the maximum throughput of the ingestion in your tests?*
+4. *clientstreamingestapp decides to report the its processing rate, including average ingestion time, total ingestion data size,
+and number of messages to mysimbdp-streamingestmonitor within a pre-defined period of time. Design the report format
+and explain possible components, flows and the mechanism for reporting.* 
+
+5. *Implement a feature in mysimbdp-streamingestmonitor to receive the report from clientstreamingestapp. Based on the
+report from clientstreamingestapp and the tenant profile, when the performance is below a threshold, e.g., average
+ingestion time is too low, mysimbdp-streamingestmonitor decides to inform mysimbdp-streamingestmanager about the
+situation. Implementation a feature in mysimbdp-streamingestmanager to receive information informed by mysimbdpstreamingestmonitor.*
+
+## Part 3 - Integration and Extension
 
 
-   
+1. *Produce an integrated architecture for the logging and monitoring of both batch and near-realtime ingestion features (Part 1,
+Point 5 and Part 2, Points 4-5) so that you as a platform provider could know the amount of data ingested and existing
+errors/performance for individual tenants.* 
+2. *In the stream ingestion pipeline, assume that a tenant has to ingest the same data but to different sinks, e.g., mybdpcoredms for storage and a new mybdp-streamdataprocessing component, what features/solutions you can provide and
+recommend to your tenant?*
+3. *The tenant wants to protect the data during the ingestion using some encryption mechanisms, e.g., clientbatchingestapp
+and clientstreamingestapp have to deal with encrypted data. Which features/solutions you recommend the tenants and
+which services you might support them for this goal?*
 
-  
-    ![Design Schema](Design_Schema.jpg "Design Schema")
-
-    
-
-
-
-
+4. *In the case of batch ingestion, we want to (i) detect the quality of data to allow ingestion only for data with a pre-defined
+quality of data condition and (ii) store metadata, including detected quality, into the platform, how you, as a platform provider,
+and your tenants can work together?*
+5. *If a tenant has multiple clientbatchingestapp and clientstreamingestapp, each is suitable for a type of data and has
+different workloads (e.g., different CPUs, memory consumption and execution time), how would you extend your design and
+implementation in Parts 1 & 2 (only explain the concept/design) to support this requirement?*
 
 | ID      | HostId | Host_name      | neighbourhood | Latitude      | Longitude | Room_type      | Price | Availability_365  | 
 | ----------- | ----------- | ----------- | ----------- | ----------- | ----------- | ----------- | ----------- | ----------- |
