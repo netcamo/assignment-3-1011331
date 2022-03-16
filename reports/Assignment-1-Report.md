@@ -84,7 +84,7 @@ Note that clientbatchingestapp follows the guideline of mysimbdp given in the ne
         }
     ]
     }          
-     ```  
+    ```  
 
     I have designed a common tool that will be provided to each tenant and they can import it in their clientingestapp.  This CommonTool accesses to tenant configuration and also gets the source_endpoint (source file to be ingested and table in the DB that data should be ingested) . It performs constraint compliances and handles everything to DAAS API to ingest the data. Thus clientingestapp provides tenant's configuration and source_endpoint to initiate the ingestion process.
 
@@ -202,6 +202,9 @@ messaging system and ingest the data into mysimbdp-coredms. For near-realtime in
 multi-tenancy model in mysimbdp: which parts of the mysimbdp will be shared for all tenants, which parts will be dedicated
 for individual tenants so that mysimbdp can add and remove tenants based on the principle of pay-per-use. Design and
 explain a set of constraints for the tenant service profile w.r.t. data ingestion.* 
+
+
+
 
 2. *Design and implement a component mysimbdp-streamingestmanager, which can start and stop clientstreamingestapp
 instances on-demand. mysimbdp imposes the model that clientstreamingestapp has to follow so that mysimbdpstreamingestmanager can invoke clientstreamingestapp as a blackbox, explain the model.* 

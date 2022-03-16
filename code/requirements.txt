@@ -1,3 +1,4 @@
 Python 3.8.10
 cassandra-driver-3.25.0
 pandas 1.4.1
+pika 1.2.0
