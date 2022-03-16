@@ -98,12 +98,27 @@ clientbatchingestapp to perform the ingestion for available files in client-stag
 model that clientbatchingestapp has to follow but clientbatchingestapp is, in principle, a blackbox to mysimbdpbatchingestmanager. Explain how mysimbdp-batchingestmanager decides/schedules the execution of
 clientbatchingestapp for tenants.* 
 
-4. *Explain your design for the multi-tenancy model in mysimbdp: which parts of mysimbdp will be shared for all tenants,
+    I have decided to use file/directory kind of system for my tenant's input datas. Every tenant has a unique id so inside client-staging-input-directory there is a folder for each tenant whose name is tenant's id. Since tenants can have multiple tables, the folders inside tenant folder shows the tables. Each folder's name is table's name. Tenant puts it's input file inside this table folders to start the ingestion. THis way whenever the file is moved to the table folder we perform ingestion to that tenant's specific table.
+
+    I have implemented it using Watchdog python module. Batchingestmanager monitors the client-staging-input-directory and whenever it detects a new file first it checks the constraints compliance (since we have constraints JSON file) and if everything is good then it proceeds to execute appropriate tenant's clientingestapp with arguments of the table name and file source. it gets these arguments from folder's names that new file has been moved to. This way the implementation and overall execution becomes very simple.
+
+
+
+
+5. *Explain your design for the multi-tenancy model in mysimbdp: which parts of mysimbdp will be shared for all tenants,
 which parts will be dedicated for individual tenants so that you as a platform provider can add and remove tenants based on
 the principle of pay-per-use. Develop test programs (clientbatchingestapp), test data, and test constraints of files, and test
 service profiles for tenants according your deployment. Show the performance of ingestion tests, including failures and
 exceptions, for at least 2 different tenants in your test environment and constraints. What is the maximum amount of data
 per second you can ingest in your tests?*
+ 
+    From tools  I have chosen to share the CommonTool which takes care of connection with DAAS and handles the configuration from clientingestapps. My databse will be shared between tenants. Since I am using Cassandra DB I can use Keyspaces for isolatig the different tenant's data and tables this allows perfect way to handle them differently but at the same time using the same database. I have chosen to create Keyspace with name of tenant_id  to be able to differentiate them easily easily. It also helps with configuration part since in input directory the root folder will be <tenant_id> folder so it will preserve the file/directory tree system that I was using for input files and tables.
+
+
+    ![DB design](design.png "DB design")
+
+
+
 
 
 5. *Implement and provide logging features for capturing successful/failed ingestion as well as metrics about ingestion time,
