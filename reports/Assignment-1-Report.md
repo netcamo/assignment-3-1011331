@@ -105,7 +105,7 @@ clientbatchingestapp for tenants.*
 
 
 
-5. *Explain your design for the multi-tenancy model in mysimbdp: which parts of mysimbdp will be shared for all tenants,
+4. *Explain your design for the multi-tenancy model in mysimbdp: which parts of mysimbdp will be shared for all tenants,
 which parts will be dedicated for individual tenants so that you as a platform provider can add and remove tenants based on
 the principle of pay-per-use. Develop test programs (clientbatchingestapp), test data, and test constraints of files, and test
 service profiles for tenants according your deployment. Show the performance of ingestion tests, including failures and
@@ -118,10 +118,23 @@ per second you can ingest in your tests?*
     ![DB design](design.png "DB design")
 
 
+* Test Implementation
 
+    I have implemented everything as designed and answered to previous questions. I have chosen same data schema for both tenants to ease the implementation. First we run docker compose to create 3 nodes of cassandra . then we run our Flask api mysimbdp_daas.py . Then we start our batchingestmanager.py which starts to monitor the input folder as soon as it notices new file in any of folders it checks compliance , then runs the appropriate client's ingest app. I have created following tables and configured them in clientingest apps :
+     
+     * tenant_1 has tables named : listings , Listing_table_2. 
+     * tenant_2 has tables named : another_listing , New_table_2
 
+    I have tested with 3 data files one is 5556 rows and the other is 237 rows. 3rd one called data_2 is copy of 1st one.
+    The results are :
 
-5. *Implement and provide logging features for capturing successful/failed ingestion as well as metrics about ingestion time,
+     ![Stat](Stat.JPG "stat")
+
+     According to our test maximum speed i got was 5062 bytes/second. This is because my local implementation limits. We can speed it up by increasing batch rows size from 200. Because of my local implementation this was the max batch size I could put. We could almost double the speed if we could ingest using more than 300 rows of batch size.
+
+     
+
+1. *Implement and provide logging features for capturing successful/failed ingestion as well as metrics about ingestion time,
 data size, etc., for files which have been ingested into mysimbdp. Logging information must be stored in separate files,
 databases or a monitoring system for analytics of ingestion. Show and explain simple statistical data extracted from logs for
 individual tenants and for the whole platform with your tests.* 
