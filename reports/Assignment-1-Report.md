@@ -132,13 +132,65 @@ per second you can ingest in your tests?*
 
      According to our test maximum speed i got was 5062 bytes/second. This is because my local implementation limits. We can speed it up by increasing batch rows size from 200. Because of my local implementation this was the max batch size I could put. We could almost double the speed if we could ingest using more than 300 rows of batch size.
 
-     
 
-1. *Implement and provide logging features for capturing successful/failed ingestion as well as metrics about ingestion time,
+
+5. *Implement and provide logging features for capturing successful/failed ingestion as well as metrics about ingestion time,
 data size, etc., for files which have been ingested into mysimbdp. Logging information must be stored in separate files,
 databases or a monitoring system for analytics of ingestion. Show and explain simple statistical data extracted from logs for
 individual tenants and for the whole platform with your tests.* 
 
+    I have used the logging module of python to provide logging features. I used it mainly inside the common tool since that's where most of action is going on and I also use it in batchingestmanager because it is the first point of interaction with inputs. I have one logs.log file where overall all logs about system goes and then I have <tenant_id>logs.log where logs of specific tenants go.  
+    Example of logs.log :
+
+        INFO:BatchIngestManagerLogger:Started Batch Ingest Manager
+        INFO:BatchIngestManagerLogger:New file detected: tenant_1/Listing_table_2/data_small.csv
+        INFO:MYSIMBDP Logger:Started MYSIMBDP Logger
+        INFO:tenant_1Logger::Tenant Common tool initiated
+        INFO:MYSIMBDP Logger:Creating the table for  tenant_id=tenant_1, file_name=data_small.csv, table_name=Listing_table_2
+        INFO:tenant_1Logger::Creating the table for  tenant_id=tenant_1, file_name=data_small.csv, table_name=Listing_table_2
+        INFO:MYSIMBDP Logger:Starting batch Ingest
+        INFO:tenant_1Logger::Starting batch Ingest
+        INFO:MYSIMBDP Logger:Finished the ingestion 
+        status=success, tenant_id=tenant_1, file_name=data_small.csv, file_size_bytes=19477, table_name=Listing_table_2, ingestion_rows=237, total_time_cost=5.690535545349121 seconds
+        INFO:tenant_1Logger::Finished the ingestion 
+        status=success, tenant_id=tenant_1, file_name=data_small.csv, file_size_bytes=19477, table_name=Listing_table_2, ingestion_rows=237, total_time_cost=5.690535545349121 seconds
+        INFO:BatchIngestManagerLogger:New file detected: tenant_1/listings/data_small.csv
+        INFO:MYSIMBDP Logger:Started MYSIMBDP Logger
+        INFO:tenant_1Logger::Tenant Common tool initiated
+        INFO:MYSIMBDP Logger:Creating the table for  tenant_id=tenant_1, file_name=data_small.csv, table_name=listings
+        INFO:tenant_1Logger::Creating the table for  tenant_id=tenant_1, file_name=data_small.csv, table_name=listings
+        INFO:MYSIMBDP Logger:Starting batch Ingest
+        INFO:tenant_1Logger::Starting batch Ingest
+        INFO:MYSIMBDP Logger:Finished the ingestion 
+        status=success, tenant_id=tenant_1, file_name=data_small.csv, file_size_bytes=19477, table_name=listings, ingestion_rows=237, total_time_cost=7.287861585617065 seconds
+        INFO:tenant_1Logger::Finished the ingestion 
+        status=success, tenant_id=tenant_1, file_name=data_small.csv, file_size_bytes=19477, table_name=listings, ingestion_rows=237, total_time_cost=7.287861585617065 seconds
+        INFO:BatchIngestManagerLogger:New file detected: tenant_2/another_listing/data_small.csv
+
+    Example of tenant_1logs.log:
+
+            Tenant Common tool initiated
+            Creating the table for  tenant_id=tenant_1, file_name=data_small.csv, table_name=Listing_table_2
+            Starting batch Ingest
+            Finished the ingestion 
+            status=success, tenant_id=tenant_1, file_name=data_small.csv, file_size_bytes=19477, table_name=Listing_table_2, ingestion_rows=237, total_time_cost=5.690535545349121 seconds
+            Tenant Common tool initiated
+            Creating the table for  tenant_id=tenant_1, file_name=data_small.csv, table_name=listings
+            Starting batch Ingest
+            Finished the ingestion 
+            status=success, tenant_id=tenant_1, file_name=data_small.csv, file_size_bytes=19477, table_name=listings, ingestion_rows=237, total_time_cost=7.287861585617065 seconds
+            Tenant Common tool initiated
+            Creating the table for  tenant_id=tenant_1, file_name=data.csv, table_name=Listing_table_2
+            Starting batch Ingest
+            Finished the ingestion 
+            status=success, tenant_id=tenant_1, file_name=data.csv, file_size_bytes=470514, table_name=Listing_table_2, ingestion_rows=5556, total_time_cost=60.319260120391846 seconds
+            Tenant Common tool initiated
+            Creating the table for  tenant_id=tenant_1, file_name=data.csv, table_name=listings
+            Starting batch Ingest
+            Finished the ingestion 
+            status=success, tenant_id=tenant_1, file_name=data.csv, file_size_bytes=470514, table_name=listings, ingestion_rows=5556, total_time_cost=68.4549822807312 seconds
+
+    Logs contain creation of new tables, new input data files, Ingestion results and some statistics about ingestion.
 
 
 ## Part 2 - Near-realtime data ingestion
