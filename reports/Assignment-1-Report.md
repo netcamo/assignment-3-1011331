@@ -45,8 +45,52 @@ client-staging-input-directory, and ingest the files into mysimbdp-coredms. Any 
 least one type of data wrangling. As a tenant, explain the design of clientbatchingestapp and provide one implementation.
 Note that clientbatchingestapp follows the guideline of mysimbdp given in the next Point 3.* 
 
+    We will havbe many tenants and they will have many tables so in order to ease managing table schemas for the platform then tenant itself provides its configuration inside their clientbatchingestapp. for example: 
 
 
+    ```javascript
+    {
+    "tenant_id": "tenant_1",
+    "tables": [
+        {
+            "table_name": "listings",
+            "primary_key": ["host_id", "id"],
+            "schema": [
+                {"field": "id", "type": "int"},
+                {"field": "host_id", "type": "int"},
+                {"field": "host_name", "type": "text"},
+                {"field": "neighbourhood", "type": "text"},
+                {"field": "latitude", "type": "float"},
+                {"field": "longitude", "type": "float"},
+                {"field": "room_type", "type": "text"},
+                {"field": "price", "type": "int"},
+                {"field": "availability_365", "type": "int"}
+            ]
+        },
+        {
+            "table_name": "Listing_table_2",
+            "primary_key": ["host_id", "id"],
+            "schema": [
+                {"field": "id", "type": "int"},
+                {"field": "host_id", "type": "int"},
+                {"field": "host_name", "type": "text"},
+                {"field": "neighbourhood", "type": "text"},
+                {"field": "latitude", "type": "float"},
+                {"field": "longitude", "type": "float"},
+                {"field": "room_type", "type": "text"},
+                {"field": "price", "type": "int"},
+                {"field": "availability_365", "type": "int"}
+            ]
+        }
+    ]
+    }          
+     ```  
+
+    I have designed a common tool that will be provided to each tenant and they can import it in their clientingestapp.  This CommonTool accesses to tenant configuration and also gets the source_endpoint (source file to be ingested and table in the DB that data should be ingested) . It performs constraint compliances and handles everything to DAAS API to ingest the data. Thus clientingestapp provides tenant's configuration and source_endpoint to initiate the ingestion process.
+
+    ![Batch Ingest Diagram](batchingestdiag.png "Batch Ingest Diagram")
+
+   
 
 
 3. *As the mysimbdp provider, design and implement a component mysimbdp-batchingestmanager that invokes tenant's
