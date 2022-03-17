@@ -48,11 +48,11 @@ class ConsumerThread(threading.Thread):
                 #os.system("python3 {current}/../client_ingest_apps/{tenant_id}/clientstreamingestapp.py {table_name} {file_name}".format(current=CURRENT_DIRECTORY, tenant_id=self._tenant['tenant_id'], table_name=table, file_name=body.decode()))
                 print("Trying to upload module")
                 
-                #clientstreamingestapp = importlib.import_module("..client_ingest_apps.{}.clientstreamingestapp.py".format(self._tenant['tenant_id'])).ClienStreamIngestApp()
-                #clientstreamingestapp.stream_ingest(table,body.decode())
+                clientstreamingestapp = importlib.import_module("..client_ingest_apps.{}.clientstreamingestapp.py".format(self._tenant['tenant_id']),package='ClientStreamIngestApp').ClienStreamIngestApp()
+                clientstreamingestapp.stream_ingest(table,body.decode())
      
                  # ack the message
-                ch.basic_ack(delivery_tag = method.delivery_tag)
+                #ch.basic_ack(delivery_tag = method.delivery_tag)
             # consume the queue
             channel.basic_consume(queue=queue_name, on_message_callback=callback,auto_ack=True)
 
