@@ -206,6 +206,7 @@ explain a set of constraints for the tenant service profile w.r.t. data ingestio
 
 
 
+
 2. *Design and implement a component mysimbdp-streamingestmanager, which can start and stop clientstreamingestapp
 instances on-demand. mysimbdp imposes the model that clientstreamingestapp has to follow so that mysimbdpstreamingestmanager can invoke clientstreamingestapp as a blackbox, explain the model.* 
 

@@ -1,3 +1,7 @@
+ docker run -d --hostname mysimbdp-rabbitmq --name bdp_rabbitmq -e RABBITMQ_DEFAULT_USER="mysimbdp" -e RABBITMQ_DEFAULT_PASS="mysimbdp" -p 5672:5672 -p 15672:15672  -p 55672:55672 rabbitmq:3-management
+
+
+
 # This is a deployment/installation guide
 
 First one needs to go to the ***code*** directory.
