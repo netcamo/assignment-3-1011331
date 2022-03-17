@@ -8,7 +8,7 @@ import requests
 
 tenants = { "tenants" :  [
     { "tenant_id": "tenant_1",
-        'file_path': os.getcwd() + '/../data/client-staging-input-directory/tenant_1/listings/data_small.csv',
+        'file_path': os.getcwd() + '/../data/client-staging-input-directory/tenant_1/listings/data.csv',
         'table_metadata': {
             "table_name": "listings",
             "primary_key": ["host_id", "id"],
@@ -46,36 +46,35 @@ tenants = { "tenants" :  [
     }
  ] }
 
-# Creating virtual host
+
 headers = {
     'content-type': 'application/json',
 }
 for tenant in tenants['tenants']:
     response = requests.put('http://localhost:15672/api/vhosts/{}'.format(tenant['tenant_id']), headers=headers, auth=('mysimbdp', 'mysimbdp'))
 
-    # connect to rabbitmq
+    
     CRENDENTIALS = pika.PlainCredentials('mysimbdp', 'mysimbdp')
     connection = pika.BlockingConnection(pika.ConnectionParameters(host="0.0.0.0", virtual_host=tenant['tenant_id'], credentials=CRENDENTIALS))
     channel = connection.channel()
 
 
-    # declare exchange
+    
     channel.exchange_declare(exchange='default', exchange_type='direct')
 
-    # read csv and publish to RabbitMQ
+    
     table=tenant['table_metadata']
-                # declare queue
+                
     result = channel.queue_declare(queue='', exclusive=True)
 
-    #QUEUE CREATION AND BINDING
+    
     queue_name = result.method.queue
-            # bind queue to exchange
          
     channel.queue_bind(exchange='default', queue=queue_name, routing_key=table['table_name'])
 
     reader = pd.read_csv(tenant['file_path'], chunksize=50)
 
-    print("tnent new")
+    print("tenant new")
     count=0
     for chunk_df in reader:
         for row in chunk_df.itertuples():
@@ -83,14 +82,10 @@ for tenant in tenants['tenants']:
             data = {
                 item['field']: getattr(row, item['field']) if not pd.isna(getattr(row, item['field'])) else None for item in table['schema']
             }
-            # produce to mq
-            #print("start")
-            channel.basic_publish(exchange='default', routing_key=table['table_name'], body=json.dumps(data))
-            #print("middle")
-            print (data)
-            #print("stop")
             
-            #print("continue")
-        time.sleep(2)        
+            channel.basic_publish(exchange='default', routing_key=table['table_name'], body=json.dumps(data))
+            print (data)
+            
+            
     print(count)
 

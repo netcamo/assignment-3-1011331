@@ -1,9 +1,6 @@
 import os
 from datetime import datetime
 import sys
-UTILS_PATH = os.getcwd()
-print(os.getcwd())
-sys.path.append(UTILS_PATH)
 import csv
 import requests
 import logging
@@ -20,6 +17,7 @@ import json
        
 class ClienStreamIngestApp():
     
+
     def stream_ingest(self, table_name, data):
         configuration = {
             "tenant_id": "tenant_1",
@@ -62,11 +60,11 @@ class ClienStreamIngestApp():
         "data": json.loads(data)
     }
         client = MySimBdp_CommonTool()
-        
-        result = client.start_stream_ingest_job(configuration, table_n_data)
-        print(result)
 
-               
+        result = client.initiate_stream_ingest(configuration, table_n_data,)
+        print(result)
+        return result
+
         #print ("Table and data are" + table_name ,data)
 
    

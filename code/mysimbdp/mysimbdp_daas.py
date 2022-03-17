@@ -108,30 +108,7 @@ def stream_ingest(tenant_id):
   session.execute(insert_stmt, [data[item] for item in keys])
   return  jsonify({'msg': 'success'}), 200
 
-@app.route('/<tenant_id>/stream_ingest', methods=['POST'])
-def streaming_ingest(tenant_id):
-    # check request method
-  if request.method != 'POST':
-    return jsonify({'msg': 'Incorrect request method'}), 400
-  if not request.is_json:
-    return jsonify({"msg": "Missing JSON in request"}), 400
 
-  # get request payload
-  table_name = request.json.get('table_name', None)
-  data = request.json.get('data', None)
-
-  # connect cassandra
-  cluster = Cluster(['0.0.0.0'])
-  session = cluster.connect()
-  batch = BatchStatement(consistency_level=ConsistencyLevel.QUORUM)
-
-  # insert data to cassandra
-  keys = data.keys()
-  print(keys)
-  fields = ",".join([item for item in keys])
-  insert_stmt ="INSERT INTO {}.{} ({}) VALUES ({})".format(tenant_id, table_name, fields, ",".join(["%s" for item in keys]))
-  session.execute(insert_stmt, [data[item] for item in keys])
-  return  jsonify({'msg': 'success'}), 200
 
 
 if __name__ == '__main__':

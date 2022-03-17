@@ -1,0 +1,1212 @@
+tenant_1 Common tool initiated
+Creating the table for  tenant_id=tenant_1,  table_name=listings
+Starting the stream ingest
+Finished Stream Ingest 
+ status=success, tenant_id=tenant_1, table_name=listings, start_time=1647546152.222787, end_time=1647546157.3314717, total_time_cost=5.108684778213501 seconds
+tenant_1 Common tool initiated
+Creating the table for  tenant_id=tenant_1,  table_name=listings
+Starting the stream ingest
+Finished Stream Ingest 
+ status=success, tenant_id=tenant_1, table_name=listings, start_time=1647546162.4200628, end_time=1647546162.495038, total_time_cost=0.07497525215148926 seconds
+tenant_1 Common tool initiated
+Creating the table for  tenant_id=tenant_1,  table_name=listings
+Starting the stream ingest
+Finished Stream Ingest 
+ status=success, tenant_id=tenant_1, table_name=listings, start_time=1647546167.5743, end_time=1647546172.6529596, total_time_cost=5.078659534454346 seconds
+tenant_1 Common tool initiated
+Creating the table for  tenant_id=tenant_1,  table_name=listings
+Starting the stream ingest
+Finished Stream Ingest 
+ status=success, tenant_id=tenant_1, table_name=listings, start_time=1647546172.8268292, end_time=1647546172.8828106, total_time_cost=0.05598139762878418 seconds
+tenant_1 Common tool initiated
+Creating the table for  tenant_id=tenant_1,  table_name=listings
+Starting the stream ingest
+Finished Stream Ingest 
+ status=success, tenant_id=tenant_1, table_name=listings, start_time=1647546177.9664938, end_time=1647546183.0299597, total_time_cost=5.06346583366394 seconds
+tenant_1 Common tool initiated
+Creating the table for  tenant_id=tenant_1,  table_name=listings
+Starting the stream ingest
+Finished Stream Ingest 
+ status=success, tenant_id=tenant_1, table_name=listings, start_time=1647546188.0947196, end_time=1647546188.1539156, total_time_cost=0.05919599533081055 seconds
+tenant_1 Common tool initiated
+Creating the table for  tenant_id=tenant_1,  table_name=listings
+Starting the stream ingest
+Finished Stream Ingest 
+ status=success, tenant_id=tenant_1, table_name=listings, start_time=1647546188.2301023, end_time=1647546188.2929842, total_time_cost=0.0628819465637207 seconds
+tenant_1 Common tool initiated
+Creating the table for  tenant_id=tenant_1,  table_name=listings
+Starting the stream ingest
+Finished Stream Ingest 
+ status=success, tenant_id=tenant_1, table_name=listings, start_time=1647546193.374341, end_time=1647546193.4272206, total_time_cost=0.05287957191467285 seconds
+tenant_1 Common tool initiated
+Creating the table for  tenant_id=tenant_1,  table_name=listings
+Starting the stream ingest
+Finished Stream Ingest 
+ status=success, tenant_id=tenant_1, table_name=listings, start_time=1647546193.5008252, end_time=1647546198.5562694, total_time_cost=5.055444240570068 seconds
+tenant_1 Common tool initiated
+Creating the table for  tenant_id=tenant_1,  table_name=listings
+Starting the stream ingest
+Finished Stream Ingest 
+ status=success, tenant_id=tenant_1, table_name=listings, start_time=1647546203.6487048, end_time=1647546203.7036667, total_time_cost=0.0549619197845459 seconds
+tenant_1 Common tool initiated
+Creating the table for  tenant_id=tenant_1,  table_name=listings
+Starting the stream ingest
+Finished Stream Ingest 
+ status=success, tenant_id=tenant_1, table_name=listings, start_time=1647546208.7711937, end_time=1647546208.8237226, total_time_cost=0.05252885818481445 seconds
+tenant_1 Common tool initiated
+Creating the table for  tenant_id=tenant_1,  table_name=listings
+Starting the stream ingest
+Finished Stream Ingest 
+ status=success, tenant_id=tenant_1, table_name=listings, start_time=1647546208.8804607, end_time=1647546213.9291587, total_time_cost=5.0486979484558105 seconds
+tenant_1 Common tool initiated
+Creating the table for  tenant_id=tenant_1,  table_name=listings
+Starting the stream ingest
+Finished Stream Ingest 
+ status=success, tenant_id=tenant_1, table_name=listings, start_time=1647546218.9837015, end_time=1647546224.0397422, total_time_cost=5.0560407638549805 seconds
+tenant_1 Common tool initiated
+Creating the table for  tenant_id=tenant_1,  table_name=listings
+Starting the stream ingest
+Finished Stream Ingest 
+ status=success, tenant_id=tenant_1, table_name=listings, start_time=1647546224.0933285, end_time=1647546224.1434765, total_time_cost=0.05014801025390625 seconds
+tenant_1 Common tool initiated
+Creating the table for  tenant_id=tenant_1,  table_name=listings
+Starting the stream ingest
+Finished Stream Ingest 
+ status=success, tenant_id=tenant_1, table_name=listings, start_time=1647546224.1977298, end_time=1647546224.3114932, total_time_cost=0.11376333236694336 seconds
+tenant_1 Common tool initiated
+Creating the table for  tenant_id=tenant_1,  table_name=listings
+Starting the stream ingest
+Finished Stream Ingest 
+ status=success, tenant_id=tenant_1, table_name=listings, start_time=1647546229.372099, end_time=1647546234.4257138, total_time_cost=5.053614854812622 seconds
+tenant_1 Common tool initiated
+Creating the table for  tenant_id=tenant_1,  table_name=listings
+Starting the stream ingest
+Finished Stream Ingest 
+ status=success, tenant_id=tenant_1, table_name=listings, start_time=1647546234.4805934, end_time=1647546239.5371501, total_time_cost=5.056556701660156 seconds
+tenant_1 Common tool initiated
+Creating the table for  tenant_id=tenant_1,  table_name=listings
+Starting the stream ingest
+Finished Stream Ingest 
+ status=success, tenant_id=tenant_1, table_name=listings, start_time=1647546239.5921986, end_time=1647546239.6412969, total_time_cost=0.04909825325012207 seconds
+tenant_1 Common tool initiated
+Creating the table for  tenant_id=tenant_1,  table_name=listings
+Starting the stream ingest
+Finished Stream Ingest 
+ status=success, tenant_id=tenant_1, table_name=listings, start_time=1647546244.6966655, end_time=1647546244.750357, total_time_cost=0.05369138717651367 seconds
+tenant_1 Common tool initiated
+Creating the table for  tenant_id=tenant_1,  table_name=listings
+Starting the stream ingest
+Finished Stream Ingest 
+ status=success, tenant_id=tenant_1, table_name=listings, start_time=1647546249.8083277, end_time=1647546249.8578842, total_time_cost=0.04955649375915527 seconds
+tenant_1 Common tool initiated
+Creating the table for  tenant_id=tenant_1,  table_name=listings
+Starting the stream ingest
+Finished Stream Ingest 
+ status=success, tenant_id=tenant_1, table_name=listings, start_time=1647546254.917251, end_time=1647546254.9669445, total_time_cost=0.04969334602355957 seconds
+tenant_1 Common tool initiated
+Creating the table for  tenant_id=tenant_1,  table_name=listings
+Starting the stream ingest
+Finished Stream Ingest 
+ status=success, tenant_id=tenant_1, table_name=listings, start_time=1647546255.023488, end_time=1647546255.0741878, total_time_cost=0.050699710845947266 seconds
+tenant_1 Common tool initiated
+Creating the table for  tenant_id=tenant_1,  table_name=listings
+Starting the stream ingest
+Finished Stream Ingest 
+ status=success, tenant_id=tenant_1, table_name=listings, start_time=1647546255.1317482, end_time=1647546255.2263138, total_time_cost=0.09456562995910645 seconds
+tenant_1 Common tool initiated
+Creating the table for  tenant_id=tenant_1,  table_name=listings
+Starting the stream ingest
+Finished Stream Ingest 
+ status=success, tenant_id=tenant_1, table_name=listings, start_time=1647546255.2809174, end_time=1647546260.331931, total_time_cost=5.051013708114624 seconds
+tenant_1 Common tool initiated
+Creating the table for  tenant_id=tenant_1,  table_name=listings
+Starting the stream ingest
+Finished Stream Ingest 
+ status=success, tenant_id=tenant_1, table_name=listings, start_time=1647546265.3899255, end_time=1647546265.4374602, total_time_cost=0.04753470420837402 seconds
+tenant_1 Common tool initiated
+Creating the table for  tenant_id=tenant_1,  table_name=listings
+Starting the stream ingest
+Finished Stream Ingest 
+ status=success, tenant_id=tenant_1, table_name=listings, start_time=1647546270.493472, end_time=1647546275.5489633, total_time_cost=5.055491209030151 seconds
+tenant_1 Common tool initiated
+Creating the table for  tenant_id=tenant_1,  table_name=listings
+Starting the stream ingest
+Finished Stream Ingest 
+ status=success, tenant_id=tenant_1, table_name=listings, start_time=1647546275.6033278, end_time=1647546275.6483626, total_time_cost=0.04503488540649414 seconds
+tenant_1 Common tool initiated
+Creating the table for  tenant_id=tenant_1,  table_name=listings
+Starting the stream ingest
+Finished Stream Ingest 
+ status=success, tenant_id=tenant_1, table_name=listings, start_time=1647546275.697377, end_time=1647546280.73992, total_time_cost=5.042542934417725 seconds
+tenant_1 Common tool initiated
+Creating the table for  tenant_id=tenant_1,  table_name=listings
+Starting the stream ingest
+Finished Stream Ingest 
+ status=success, tenant_id=tenant_1, table_name=listings, start_time=1647546285.8011892, end_time=1647546290.8490188, total_time_cost=5.047829627990723 seconds
+tenant_1 Common tool initiated
+Creating the table for  tenant_id=tenant_1,  table_name=listings
+Starting the stream ingest
+Finished Stream Ingest 
+ status=success, tenant_id=tenant_1, table_name=listings, start_time=1647546290.9041498, end_time=1647546295.9559195, total_time_cost=5.051769733428955 seconds
+tenant_1 Common tool initiated
+Creating the table for  tenant_id=tenant_1,  table_name=listings
+Starting the stream ingest
+Finished Stream Ingest 
+ status=success, tenant_id=tenant_1, table_name=listings, start_time=1647546301.0359254, end_time=1647546301.153168, total_time_cost=0.11724257469177246 seconds
+tenant_1 Common tool initiated
+Creating the table for  tenant_id=tenant_1,  table_name=listings
+Starting the stream ingest
+Finished Stream Ingest 
+ status=success, tenant_id=tenant_1, table_name=listings, start_time=1647546306.2733786, end_time=1647546311.3184373, total_time_cost=5.045058727264404 seconds
+tenant_1 Common tool initiated
+Creating the table for  tenant_id=tenant_1,  table_name=listings
+Starting the stream ingest
+Finished Stream Ingest 
+ status=success, tenant_id=tenant_1, table_name=listings, start_time=1647546311.372635, end_time=1647546316.4173021, total_time_cost=5.0446672439575195 seconds
+tenant_1 Common tool initiated
+Creating the table for  tenant_id=tenant_1,  table_name=listings
+Starting the stream ingest
+Finished Stream Ingest 
+ status=success, tenant_id=tenant_1, table_name=listings, start_time=1647546316.4739585, end_time=1647546316.5175133, total_time_cost=0.04355478286743164 seconds
+tenant_1 Common tool initiated
+Creating the table for  tenant_id=tenant_1,  table_name=listings
+Starting the stream ingest
+Finished Stream Ingest 
+ status=success, tenant_id=tenant_1, table_name=listings, start_time=1647546321.5679677, end_time=1647546326.61859, total_time_cost=5.050622463226318 seconds
+tenant_1 Common tool initiated
+Creating the table for  tenant_id=tenant_1,  table_name=listings
+Starting the stream ingest
+Finished Stream Ingest 
+ status=success, tenant_id=tenant_1, table_name=listings, start_time=1647546331.6853056, end_time=1647546331.8072138, total_time_cost=0.12190818786621094 seconds
+tenant_1 Common tool initiated
+Creating the table for  tenant_id=tenant_1,  table_name=listings
+Starting the stream ingest
+Finished Stream Ingest 
+ status=success, tenant_id=tenant_1, table_name=listings, start_time=1647546336.8688788, end_time=1647546341.9242826, total_time_cost=5.055403709411621 seconds
+tenant_1 Common tool initiated
+Creating the table for  tenant_id=tenant_1,  table_name=listings
+Starting the stream ingest
+Finished Stream Ingest 
+ status=success, tenant_id=tenant_1, table_name=listings, start_time=1647546346.9872642, end_time=1647546347.0407047, total_time_cost=0.05344057083129883 seconds
+tenant_1 Common tool initiated
+Creating the table for  tenant_id=tenant_1,  table_name=listings
+Starting the stream ingest
+Finished Stream Ingest 
+ status=success, tenant_id=tenant_1, table_name=listings, start_time=1647546347.0976067, end_time=1647546347.1462848, total_time_cost=0.04867815971374512 seconds
+tenant_1 Common tool initiated
+Creating the table for  tenant_id=tenant_1,  table_name=listings
+Starting the stream ingest
+Finished Stream Ingest 
+ status=success, tenant_id=tenant_1, table_name=listings, start_time=1647546352.1986623, end_time=1647546357.2506323, total_time_cost=5.0519700050354 seconds
+tenant_1 Common tool initiated
+Creating the table for  tenant_id=tenant_1,  table_name=listings
+Starting the stream ingest
+Finished Stream Ingest 
+ status=success, tenant_id=tenant_1, table_name=listings, start_time=1647546362.3218393, end_time=1647546362.4216301, total_time_cost=0.09979081153869629 seconds
+tenant_1 Common tool initiated
+Creating the table for  tenant_id=tenant_1,  table_name=listings
+Starting the stream ingest
+Finished Stream Ingest 
+ status=success, tenant_id=tenant_1, table_name=listings, start_time=1647546367.5237298, end_time=1647546367.5742044, total_time_cost=0.05047464370727539 seconds
+tenant_1 Common tool initiated
+Creating the table for  tenant_id=tenant_1,  table_name=listings
+Starting the stream ingest
+Finished Stream Ingest 
+ status=success, tenant_id=tenant_1, table_name=listings, start_time=1647546372.6407223, end_time=1647546377.6934252, total_time_cost=5.052702903747559 seconds
+tenant_1 Common tool initiated
+Creating the table for  tenant_id=tenant_1,  table_name=listings
+Starting the stream ingest
+Finished Stream Ingest 
+ status=success, tenant_id=tenant_1, table_name=listings, start_time=1647546382.7568135, end_time=1647546382.8107393, total_time_cost=0.05392575263977051 seconds
+tenant_1 Common tool initiated
+Creating the table for  tenant_id=tenant_1,  table_name=listings
+Starting the stream ingest
+Finished Stream Ingest 
+ status=success, tenant_id=tenant_1, table_name=listings, start_time=1647546387.8738246, end_time=1647546392.9251482, total_time_cost=5.051323652267456 seconds
+tenant_1 Common tool initiated
+Creating the table for  tenant_id=tenant_1,  table_name=listings
+Starting the stream ingest
+Finished Stream Ingest 
+ status=success, tenant_id=tenant_1, table_name=listings, start_time=1647546397.9857116, end_time=1647546398.0363314, total_time_cost=0.05061984062194824 seconds
+tenant_1 Common tool initiated
+Creating the table for  tenant_id=tenant_1,  table_name=listings
+Starting the stream ingest
+Finished Stream Ingest 
+ status=success, tenant_id=tenant_1, table_name=listings, start_time=1647546403.097711, end_time=1647546403.1569288, total_time_cost=0.05921769142150879 seconds
+tenant_1 Common tool initiated
+Creating the table for  tenant_id=tenant_1,  table_name=listings
+Starting the stream ingest
+Finished Stream Ingest 
+ status=success, tenant_id=tenant_1, table_name=listings, start_time=1647546403.2219653, end_time=1647546408.2806427, total_time_cost=5.058677434921265 seconds
+tenant_1 Common tool initiated
+Creating the table for  tenant_id=tenant_1,  table_name=listings
+Starting the stream ingest
+Finished Stream Ingest 
+ status=success, tenant_id=tenant_1, table_name=listings, start_time=1647546408.3464794, end_time=1647546408.4845886, total_time_cost=0.1381092071533203 seconds
+tenant_1 Common tool initiated
+Creating the table for  tenant_id=tenant_1,  table_name=listings
+Starting the stream ingest
+Finished Stream Ingest 
+ status=success, tenant_id=tenant_1, table_name=listings, start_time=1647546413.5465188, end_time=1647546413.6022432, total_time_cost=0.055724382400512695 seconds
+tenant_1 Common tool initiated
+Creating the table for  tenant_id=tenant_1,  table_name=listings
+Starting the stream ingest
+Finished Stream Ingest 
+ status=success, tenant_id=tenant_1, table_name=listings, start_time=1647546418.6673946, end_time=1647546423.7181175, total_time_cost=5.05072283744812 seconds
+tenant_1 Common tool initiated
+Creating the table for  tenant_id=tenant_1,  table_name=listings
+Starting the stream ingest
+Finished Stream Ingest 
+ status=success, tenant_id=tenant_1, table_name=listings, start_time=1647546428.7870593, end_time=1647546433.8463213, total_time_cost=5.059262037277222 seconds
+tenant_1 Common tool initiated
+Creating the table for  tenant_id=tenant_1,  table_name=listings
+Starting the stream ingest
+Finished Stream Ingest 
+ status=success, tenant_id=tenant_1, table_name=listings, start_time=1647546433.9424088, end_time=1647546438.9985554, total_time_cost=5.056146621704102 seconds
+tenant_1 Common tool initiated
+Creating the table for  tenant_id=tenant_1,  table_name=listings
+Starting the stream ingest
+Finished Stream Ingest 
+ status=success, tenant_id=tenant_1, table_name=listings, start_time=1647546444.0594566, end_time=1647546444.1177843, total_time_cost=0.058327674865722656 seconds
+tenant_1 Common tool initiated
+Creating the table for  tenant_id=tenant_1,  table_name=listings
+Starting the stream ingest
+Finished Stream Ingest 
+ status=success, tenant_id=tenant_1, table_name=listings, start_time=1647546449.1807323, end_time=1647546454.2368617, total_time_cost=5.056129455566406 seconds
+tenant_1 Common tool initiated
+Creating the table for  tenant_id=tenant_1,  table_name=listings
+Starting the stream ingest
+Finished Stream Ingest 
+ status=success, tenant_id=tenant_1, table_name=listings, start_time=1647546454.2991834, end_time=1647546454.3583043, total_time_cost=0.059120893478393555 seconds
+tenant_1 Common tool initiated
+Creating the table for  tenant_id=tenant_1,  table_name=listings
+Starting the stream ingest
+Finished Stream Ingest 
+ status=success, tenant_id=tenant_1, table_name=listings, start_time=1647546459.4332829, end_time=1647546464.4896886, total_time_cost=5.056405782699585 seconds
+tenant_1 Common tool initiated
+Creating the table for  tenant_id=tenant_1,  table_name=listings
+Starting the stream ingest
+Finished Stream Ingest 
+ status=success, tenant_id=tenant_1, table_name=listings, start_time=1647546469.5545537, end_time=1647546474.6154504, total_time_cost=5.060896635055542 seconds
+tenant_1 Common tool initiated
+Creating the table for  tenant_id=tenant_1,  table_name=listings
+Starting the stream ingest
+Finished Stream Ingest 
+ status=success, tenant_id=tenant_1, table_name=listings, start_time=1647546479.689405, end_time=1647546484.7486198, total_time_cost=5.05921483039856 seconds
+tenant_1 Common tool initiated
+Creating the table for  tenant_id=tenant_1,  table_name=listings
+Starting the stream ingest
+Finished Stream Ingest 
+ status=success, tenant_id=tenant_1, table_name=listings, start_time=1647546484.8164337, end_time=1647546489.8814154, total_time_cost=5.064981698989868 seconds
+tenant_1 Common tool initiated
+Creating the table for  tenant_id=tenant_1,  table_name=listings
+Starting the stream ingest
+Finished Stream Ingest 
+ status=success, tenant_id=tenant_1, table_name=listings, start_time=1647546494.944741, end_time=1647546500.005493, total_time_cost=5.060751914978027 seconds
+tenant_1 Common tool initiated
+Creating the table for  tenant_id=tenant_1,  table_name=listings
+Starting the stream ingest
+Finished Stream Ingest 
+ status=success, tenant_id=tenant_1, table_name=listings, start_time=1647546500.0723026, end_time=1647546505.2659771, total_time_cost=5.193674564361572 seconds
+tenant_1 Common tool initiated
+Creating the table for  tenant_id=tenant_1,  table_name=listings
+Starting the stream ingest
+Finished Stream Ingest 
+ status=success, tenant_id=tenant_1, table_name=listings, start_time=1647546510.339654, end_time=1647546510.4026313, total_time_cost=0.06297731399536133 seconds
+tenant_1 Common tool initiated
+Creating the table for  tenant_id=tenant_1,  table_name=listings
+Starting the stream ingest
+Finished Stream Ingest 
+ status=success, tenant_id=tenant_1, table_name=listings, start_time=1647546510.481678, end_time=1647546510.536196, total_time_cost=0.05451798439025879 seconds
+tenant_1 Common tool initiated
+Creating the table for  tenant_id=tenant_1,  table_name=listings
+Starting the stream ingest
+Finished Stream Ingest 
+ status=success, tenant_id=tenant_1, table_name=listings, start_time=1647546515.629943, end_time=1647546520.681216, total_time_cost=5.0512731075286865 seconds
+tenant_1 Common tool initiated
+Creating the table for  tenant_id=tenant_1,  table_name=listings
+Starting the stream ingest
+Finished Stream Ingest 
+ status=success, tenant_id=tenant_1, table_name=listings, start_time=1647546525.744518, end_time=1647546530.8070712, total_time_cost=5.06255316734314 seconds
+tenant_1 Common tool initiated
+Creating the table for  tenant_id=tenant_1,  table_name=listings
+Starting the stream ingest
+Finished Stream Ingest 
+ status=success, tenant_id=tenant_1, table_name=listings, start_time=1647546530.8757727, end_time=1647546535.9479809, total_time_cost=5.0722081661224365 seconds
+tenant_1 Common tool initiated
+Creating the table for  tenant_id=tenant_1,  table_name=listings
+Starting the stream ingest
+Finished Stream Ingest 
+ status=success, tenant_id=tenant_1, table_name=listings, start_time=1647546536.008892, end_time=1647546536.0687985, total_time_cost=0.0599064826965332 seconds
+tenant_1 Common tool initiated
+Creating the table for  tenant_id=tenant_1,  table_name=listings
+Starting the stream ingest
+Finished Stream Ingest 
+ status=success, tenant_id=tenant_1, table_name=listings, start_time=1647546536.1368494, end_time=1647546536.209006, total_time_cost=0.07215666770935059 seconds
+tenant_1 Common tool initiated
+Creating the table for  tenant_id=tenant_1,  table_name=listings
+Starting the stream ingest
+Finished Stream Ingest 
+ status=success, tenant_id=tenant_1, table_name=listings, start_time=1647546541.2874985, end_time=1647546546.3977568, total_time_cost=5.110258340835571 seconds
+tenant_1 Common tool initiated
+Creating the table for  tenant_id=tenant_1,  table_name=listings
+Starting the stream ingest
+Finished Stream Ingest 
+ status=success, tenant_id=tenant_1, table_name=listings, start_time=1647546551.458524, end_time=1647546556.5215788, total_time_cost=5.063054800033569 seconds
+tenant_1 Common tool initiated
+Creating the table for  tenant_id=tenant_1,  table_name=listings
+Starting the stream ingest
+Finished Stream Ingest 
+ status=success, tenant_id=tenant_1, table_name=listings, start_time=1647546556.5891485, end_time=1647546556.6506684, total_time_cost=0.06151986122131348 seconds
+tenant_1 Common tool initiated
+Creating the table for  tenant_id=tenant_1,  table_name=listings
+Starting the stream ingest
+Finished Stream Ingest 
+ status=success, tenant_id=tenant_1, table_name=listings, start_time=1647546556.7149742, end_time=1647546556.762649, total_time_cost=0.04767489433288574 seconds
+tenant_1 Common tool initiated
+Creating the table for  tenant_id=tenant_1,  table_name=listings
+Starting the stream ingest
+Finished Stream Ingest 
+ status=success, tenant_id=tenant_1, table_name=listings, start_time=1647546561.8222718, end_time=1647546566.8832695, total_time_cost=5.060997724533081 seconds
+tenant_1 Common tool initiated
+Creating the table for  tenant_id=tenant_1,  table_name=listings
+Starting the stream ingest
+Finished Stream Ingest 
+ status=success, tenant_id=tenant_1, table_name=listings, start_time=1647546571.9528992, end_time=1647546577.0147467, total_time_cost=5.061847448348999 seconds
+tenant_1 Common tool initiated
+Creating the table for  tenant_id=tenant_1,  table_name=listings
+Starting the stream ingest
+Finished Stream Ingest 
+ status=success, tenant_id=tenant_1, table_name=listings, start_time=1647546582.072453, end_time=1647546587.1275737, total_time_cost=5.0551207065582275 seconds
+tenant_1 Common tool initiated
+Creating the table for  tenant_id=tenant_1,  table_name=listings
+Starting the stream ingest
+Finished Stream Ingest 
+ status=success, tenant_id=tenant_1, table_name=listings, start_time=1647546587.345668, end_time=1647546587.3912537, total_time_cost=0.04558563232421875 seconds
+tenant_1 Common tool initiated
+Creating the table for  tenant_id=tenant_1,  table_name=listings
+Starting the stream ingest
+Finished Stream Ingest 
+ status=success, tenant_id=tenant_1, table_name=listings, start_time=1647546592.4698808, end_time=1647546597.5180814, total_time_cost=5.048200607299805 seconds
+tenant_1 Common tool initiated
+Creating the table for  tenant_id=tenant_1,  table_name=listings
+Starting the stream ingest
+Finished Stream Ingest 
+ status=success, tenant_id=tenant_1, table_name=listings, start_time=1647546597.5880356, end_time=1647546602.642669, total_time_cost=5.054633378982544 seconds
+tenant_1 Common tool initiated
+Creating the table for  tenant_id=tenant_1,  table_name=listings
+Starting the stream ingest
+Finished Stream Ingest 
+ status=success, tenant_id=tenant_1, table_name=listings, start_time=1647546607.708908, end_time=1647546612.7701888, total_time_cost=5.061280727386475 seconds
+tenant_1 Common tool initiated
+Creating the table for  tenant_id=tenant_1,  table_name=listings
+Starting the stream ingest
+Finished Stream Ingest 
+ status=success, tenant_id=tenant_1, table_name=listings, start_time=1647546617.8304532, end_time=1647546622.894169, total_time_cost=5.063715934753418 seconds
+tenant_1 Common tool initiated
+Creating the table for  tenant_id=tenant_1,  table_name=listings
+Starting the stream ingest
+Finished Stream Ingest 
+ status=success, tenant_id=tenant_1, table_name=listings, start_time=1647546627.9641116, end_time=1647546633.0267658, total_time_cost=5.062654256820679 seconds
+tenant_1 Common tool initiated
+Creating the table for  tenant_id=tenant_1,  table_name=listings
+Starting the stream ingest
+Finished Stream Ingest 
+ status=success, tenant_id=tenant_1, table_name=listings, start_time=1647546638.098621, end_time=1647546638.1493149, total_time_cost=0.05069398880004883 seconds
+tenant_1 Common tool initiated
+Creating the table for  tenant_id=tenant_1,  table_name=listings
+Starting the stream ingest
+Finished Stream Ingest 
+ status=success, tenant_id=tenant_1, table_name=listings, start_time=1647546643.3235142, end_time=1647546648.3784049, total_time_cost=5.0548906326293945 seconds
+tenant_1 Common tool initiated
+Creating the table for  tenant_id=tenant_1,  table_name=listings
+Starting the stream ingest
+Finished Stream Ingest 
+ status=success, tenant_id=tenant_1, table_name=listings, start_time=1647546653.4573953, end_time=1647546653.5114357, total_time_cost=0.05404043197631836 seconds
+tenant_1 Common tool initiated
+Creating the table for  tenant_id=tenant_1,  table_name=listings
+Starting the stream ingest
+Finished Stream Ingest 
+ status=success, tenant_id=tenant_1, table_name=listings, start_time=1647546653.5961456, end_time=1647546653.658164, total_time_cost=0.062018394470214844 seconds
+tenant_1 Common tool initiated
+Creating the table for  tenant_id=tenant_1,  table_name=listings
+Starting the stream ingest
+Finished Stream Ingest 
+ status=success, tenant_id=tenant_1, table_name=listings, start_time=1647546658.7417207, end_time=1647546658.8050716, total_time_cost=0.06335091590881348 seconds
+tenant_1 Common tool initiated
+Creating the table for  tenant_id=tenant_1,  table_name=listings
+Starting the stream ingest
+Finished Stream Ingest 
+ status=success, tenant_id=tenant_1, table_name=listings, start_time=1647546663.879623, end_time=1647546663.9589336, total_time_cost=0.07931065559387207 seconds
+tenant_1 Common tool initiated
+Creating the table for  tenant_id=tenant_1,  table_name=listings
+Starting the stream ingest
+Finished Stream Ingest 
+ status=success, tenant_id=tenant_1, table_name=listings, start_time=1647546669.049262, end_time=1647546669.1132703, total_time_cost=0.06400823593139648 seconds
+tenant_1 Common tool initiated
+Creating the table for  tenant_id=tenant_1,  table_name=listings
+Starting the stream ingest
+Finished Stream Ingest 
+ status=success, tenant_id=tenant_1, table_name=listings, start_time=1647546669.1877172, end_time=1647546674.251086, total_time_cost=5.063368797302246 seconds
+tenant_1 Common tool initiated
+Creating the table for  tenant_id=tenant_1,  table_name=listings
+Starting the stream ingest
+Finished Stream Ingest 
+ status=success, tenant_id=tenant_1, table_name=listings, start_time=1647546674.3254316, end_time=1647546679.390231, total_time_cost=5.0647993087768555 seconds
+tenant_1 Common tool initiated
+Creating the table for  tenant_id=tenant_1,  table_name=listings
+Starting the stream ingest
+Finished Stream Ingest 
+ status=success, tenant_id=tenant_1, table_name=listings, start_time=1647546684.454764, end_time=1647546689.5115893, total_time_cost=5.056825399398804 seconds
+tenant_1 Common tool initiated
+Creating the table for  tenant_id=tenant_1,  table_name=listings
+Starting the stream ingest
+Finished Stream Ingest 
+ status=success, tenant_id=tenant_1, table_name=listings, start_time=1647546694.5853353, end_time=1647546694.815992, total_time_cost=0.23065686225891113 seconds
+tenant_1 Common tool initiated
+Creating the table for  tenant_id=tenant_1,  table_name=listings
+Starting the stream ingest
+Finished Stream Ingest 
+ status=success, tenant_id=tenant_1, table_name=listings, start_time=1647546699.873665, end_time=1647546699.946296, total_time_cost=0.0726308822631836 seconds
+tenant_1 Common tool initiated
+Creating the table for  tenant_id=tenant_1,  table_name=listings
+Starting the stream ingest
+Finished Stream Ingest 
+ status=success, tenant_id=tenant_1, table_name=listings, start_time=1647546705.0138233, end_time=1647546705.0867276, total_time_cost=0.07290434837341309 seconds
+tenant_1 Common tool initiated
+Creating the table for  tenant_id=tenant_1,  table_name=listings
+Starting the stream ingest
+Finished Stream Ingest 
+ status=success, tenant_id=tenant_1, table_name=listings, start_time=1647546710.1537998, end_time=1647546710.2246346, total_time_cost=0.07083487510681152 seconds
+tenant_1 Common tool initiated
+Creating the table for  tenant_id=tenant_1,  table_name=listings
+Starting the stream ingest
+Finished Stream Ingest 
+ status=success, tenant_id=tenant_1, table_name=listings, start_time=1647546710.3074048, end_time=1647546715.36539, total_time_cost=5.057985305786133 seconds
+tenant_1 Common tool initiated
+Creating the table for  tenant_id=tenant_1,  table_name=listings
+Starting the stream ingest
+Finished Stream Ingest 
+ status=success, tenant_id=tenant_1, table_name=listings, start_time=1647546720.4468806, end_time=1647546725.5207517, total_time_cost=5.07387113571167 seconds
+tenant_1 Common tool initiated
+Creating the table for  tenant_id=tenant_1,  table_name=listings
+Starting the stream ingest
+Finished Stream Ingest 
+ status=success, tenant_id=tenant_1, table_name=listings, start_time=1647546725.6033664, end_time=1647546730.6685052, total_time_cost=5.065138816833496 seconds
+tenant_1 Common tool initiated
+Creating the table for  tenant_id=tenant_1,  table_name=listings
+Starting the stream ingest
+Finished Stream Ingest 
+ status=success, tenant_id=tenant_1, table_name=listings, start_time=1647546735.7434862, end_time=1647546740.8028302, total_time_cost=5.059344053268433 seconds
+tenant_1 Common tool initiated
+Creating the table for  tenant_id=tenant_1,  table_name=listings
+Starting the stream ingest
+Finished Stream Ingest 
+ status=success, tenant_id=tenant_1, table_name=listings, start_time=1647546740.8833628, end_time=1647546740.9594557, total_time_cost=0.07609295845031738 seconds
+tenant_1 Common tool initiated
+Creating the table for  tenant_id=tenant_1,  table_name=listings
+Starting the stream ingest
+Finished Stream Ingest 
+ status=success, tenant_id=tenant_1, table_name=listings, start_time=1647546746.0274627, end_time=1647546746.1146507, total_time_cost=0.0871880054473877 seconds
+tenant_1 Common tool initiated
+Creating the table for  tenant_id=tenant_1,  table_name=listings
+Starting the stream ingest
+Finished Stream Ingest 
+ status=success, tenant_id=tenant_1, table_name=listings, start_time=1647546751.1904562, end_time=1647546751.2518325, total_time_cost=0.061376333236694336 seconds
+tenant_1 Common tool initiated
+Creating the table for  tenant_id=tenant_1,  table_name=listings
+Starting the stream ingest
+Finished Stream Ingest 
+ status=success, tenant_id=tenant_1, table_name=listings, start_time=1647546756.3292842, end_time=1647546756.4030156, total_time_cost=0.0737314224243164 seconds
+tenant_1 Common tool initiated
+Creating the table for  tenant_id=tenant_1,  table_name=listings
+Starting the stream ingest
+Finished Stream Ingest 
+ status=success, tenant_id=tenant_1, table_name=listings, start_time=1647546756.4753528, end_time=1647546761.5322967, total_time_cost=5.056943893432617 seconds
+tenant_1 Common tool initiated
+Creating the table for  tenant_id=tenant_1,  table_name=listings
+Starting the stream ingest
+Finished Stream Ingest 
+ status=success, tenant_id=tenant_1, table_name=listings, start_time=1647546766.5987694, end_time=1647546771.681841, total_time_cost=5.08307147026062 seconds
+tenant_1 Common tool initiated
+Creating the table for  tenant_id=tenant_1,  table_name=listings
+Starting the stream ingest
+Finished Stream Ingest 
+ status=success, tenant_id=tenant_1, table_name=listings, start_time=1647546771.7555196, end_time=1647546771.8300567, total_time_cost=0.07453703880310059 seconds
+tenant_1 Common tool initiated
+Creating the table for  tenant_id=tenant_1,  table_name=listings
+Starting the stream ingest
+Finished Stream Ingest 
+ status=success, tenant_id=tenant_1, table_name=listings, start_time=1647546771.9000258, end_time=1647546771.9545019, total_time_cost=0.054476022720336914 seconds
+tenant_1 Common tool initiated
+Creating the table for  tenant_id=tenant_1,  table_name=listings
+Starting the stream ingest
+Finished Stream Ingest 
+ status=success, tenant_id=tenant_1, table_name=listings, start_time=1647546777.1115174, end_time=1647546782.1752083, total_time_cost=5.063690900802612 seconds
+tenant_1 Common tool initiated
+Creating the table for  tenant_id=tenant_1,  table_name=listings
+Starting the stream ingest
+Finished Stream Ingest 
+ status=success, tenant_id=tenant_1, table_name=listings, start_time=1647546787.3483639, end_time=1647546792.4022834, total_time_cost=5.053919553756714 seconds
+tenant_1 Common tool initiated
+Creating the table for  tenant_id=tenant_1,  table_name=listings
+Starting the stream ingest
+Finished Stream Ingest 
+ status=success, tenant_id=tenant_1, table_name=listings, start_time=1647546792.4831965, end_time=1647546797.5407727, total_time_cost=5.0575761795043945 seconds
+tenant_1 Common tool initiated
+Creating the table for  tenant_id=tenant_1,  table_name=listings
+Starting the stream ingest
+Finished Stream Ingest 
+ status=success, tenant_id=tenant_1, table_name=listings, start_time=1647546797.8201184, end_time=1647546802.8772368, total_time_cost=5.0571184158325195 seconds
+tenant_1 Common tool initiated
+Creating the table for  tenant_id=tenant_1,  table_name=listings
+Starting the stream ingest
+Finished Stream Ingest 
+ status=success, tenant_id=tenant_1, table_name=listings, start_time=1647546807.9651694, end_time=1647546808.0233936, total_time_cost=0.05822420120239258 seconds
+tenant_1 Common tool initiated
+Creating the table for  tenant_id=tenant_1,  table_name=listings
+Starting the stream ingest
+Finished Stream Ingest 
+ status=success, tenant_id=tenant_1, table_name=listings, start_time=1647546808.1103532, end_time=1647546813.1690702, total_time_cost=5.0587170124053955 seconds
+tenant_1 Common tool initiated
+Creating the table for  tenant_id=tenant_1,  table_name=listings
+Starting the stream ingest
+Finished Stream Ingest 
+ status=success, tenant_id=tenant_1, table_name=listings, start_time=1647546818.2388904, end_time=1647546818.3141758, total_time_cost=0.07528543472290039 seconds
+tenant_1 Common tool initiated
+Creating the table for  tenant_id=tenant_1,  table_name=listings
+Starting the stream ingest
+Finished Stream Ingest 
+ status=success, tenant_id=tenant_1, table_name=listings, start_time=1647546823.4006226, end_time=1647546823.500522, total_time_cost=0.0998992919921875 seconds
+tenant_1 Common tool initiated
+Creating the table for  tenant_id=tenant_1,  table_name=listings
+Starting the stream ingest
+Finished Stream Ingest 
+ status=success, tenant_id=tenant_1, table_name=listings, start_time=1647546828.5650804, end_time=1647546833.6339054, total_time_cost=5.068825006484985 seconds
+tenant_1 Common tool initiated
+Creating the table for  tenant_id=tenant_1,  table_name=listings
+Starting the stream ingest
+Finished Stream Ingest 
+ status=success, tenant_id=tenant_1, table_name=listings, start_time=1647546838.7104747, end_time=1647546843.7777019, total_time_cost=5.067227125167847 seconds
+tenant_1 Common tool initiated
+Creating the table for  tenant_id=tenant_1,  table_name=listings
+Starting the stream ingest
+Finished Stream Ingest 
+ status=success, tenant_id=tenant_1, table_name=listings, start_time=1647546848.856738, end_time=1647546853.9328783, total_time_cost=5.0761401653289795 seconds
+tenant_1 Common tool initiated
+Creating the table for  tenant_id=tenant_1,  table_name=listings
+Starting the stream ingest
+Finished Stream Ingest 
+ status=success, tenant_id=tenant_1, table_name=listings, start_time=1647546859.0522442, end_time=1647546859.10961, total_time_cost=0.05736589431762695 seconds
+tenant_1 Common tool initiated
+Creating the table for  tenant_id=tenant_1,  table_name=listings
+Starting the stream ingest
+Finished Stream Ingest 
+ status=success, tenant_id=tenant_1, table_name=listings, start_time=1647546864.1887078, end_time=1647546869.2689874, total_time_cost=5.080279588699341 seconds
+tenant_1 Common tool initiated
+Creating the table for  tenant_id=tenant_1,  table_name=listings
+Starting the stream ingest
+Finished Stream Ingest 
+ status=success, tenant_id=tenant_1, table_name=listings, start_time=1647546874.328406, end_time=1647546879.3882928, total_time_cost=5.059886693954468 seconds
+tenant_1 Common tool initiated
+Creating the table for  tenant_id=tenant_1,  table_name=listings
+Starting the stream ingest
+Finished Stream Ingest 
+ status=success, tenant_id=tenant_1, table_name=listings, start_time=1647546879.4670155, end_time=1647546884.5328856, total_time_cost=5.065870046615601 seconds
+tenant_1 Common tool initiated
+Creating the table for  tenant_id=tenant_1,  table_name=listings
+Starting the stream ingest
+Finished Stream Ingest 
+ status=success, tenant_id=tenant_1, table_name=listings, start_time=1647546884.6329505, end_time=1647546884.6921432, total_time_cost=0.059192657470703125 seconds
+tenant_1 Common tool initiated
+Creating the table for  tenant_id=tenant_1,  table_name=listings
+Starting the stream ingest
+Finished Stream Ingest 
+ status=success, tenant_id=tenant_1, table_name=listings, start_time=1647546889.7560098, end_time=1647546889.8273408, total_time_cost=0.07133102416992188 seconds
+tenant_1 Common tool initiated
+Creating the table for  tenant_id=tenant_1,  table_name=listings
+Starting the stream ingest
+Finished Stream Ingest 
+ status=success, tenant_id=tenant_1, table_name=listings, start_time=1647546894.920627, end_time=1647546899.9871573, total_time_cost=5.066530227661133 seconds
+tenant_1 Common tool initiated
+Creating the table for  tenant_id=tenant_1,  table_name=listings
+Starting the stream ingest
+Finished Stream Ingest 
+ status=success, tenant_id=tenant_1, table_name=listings, start_time=1647546905.0922108, end_time=1647546910.152368, total_time_cost=5.060157299041748 seconds
+tenant_1 Common tool initiated
+Creating the table for  tenant_id=tenant_1,  table_name=listings
+Starting the stream ingest
+Finished Stream Ingest 
+ status=success, tenant_id=tenant_1, table_name=listings, start_time=1647546915.2228694, end_time=1647546920.2857084, total_time_cost=5.062839031219482 seconds
+tenant_1 Common tool initiated
+Creating the table for  tenant_id=tenant_1,  table_name=listings
+Starting the stream ingest
+Finished Stream Ingest 
+ status=success, tenant_id=tenant_1, table_name=listings, start_time=1647546925.367815, end_time=1647546930.4344964, total_time_cost=5.066681385040283 seconds
+tenant_1 Common tool initiated
+Creating the table for  tenant_id=tenant_1,  table_name=listings
+Starting the stream ingest
+Finished Stream Ingest 
+ status=success, tenant_id=tenant_1, table_name=listings, start_time=1647546930.5176933, end_time=1647546935.582992, total_time_cost=5.065298795700073 seconds
+tenant_1 Common tool initiated
+Creating the table for  tenant_id=tenant_1,  table_name=listings
+Starting the stream ingest
+Finished Stream Ingest 
+ status=success, tenant_id=tenant_1, table_name=listings, start_time=1647546940.6524649, end_time=1647546945.7313402, total_time_cost=5.078875303268433 seconds
+tenant_1 Common tool initiated
+Creating the table for  tenant_id=tenant_1,  table_name=listings
+Starting the stream ingest
+Finished Stream Ingest 
+ status=success, tenant_id=tenant_1, table_name=listings, start_time=1647546945.8174982, end_time=1647546950.8758702, total_time_cost=5.0583720207214355 seconds
+tenant_1 Common tool initiated
+Creating the table for  tenant_id=tenant_1,  table_name=listings
+Starting the stream ingest
+Finished Stream Ingest 
+ status=success, tenant_id=tenant_1, table_name=listings, start_time=1647546951.0353463, end_time=1647546951.3273962, total_time_cost=0.2920498847961426 seconds
+tenant_1 Common tool initiated
+Creating the table for  tenant_id=tenant_1,  table_name=listings
+Starting the stream ingest
+Finished Stream Ingest 
+ status=success, tenant_id=tenant_1, table_name=listings, start_time=1647546956.3794322, end_time=1647546961.4366782, total_time_cost=5.057245969772339 seconds
+tenant_1 Common tool initiated
+Creating the table for  tenant_id=tenant_1,  table_name=listings
+Starting the stream ingest
+Finished Stream Ingest 
+ status=success, tenant_id=tenant_1, table_name=listings, start_time=1647546961.5235791, end_time=1647546966.603543, total_time_cost=5.07996392250061 seconds
+tenant_1 Common tool initiated
+Creating the table for  tenant_id=tenant_1,  table_name=listings
+Starting the stream ingest
+Finished Stream Ingest 
+ status=success, tenant_id=tenant_1, table_name=listings, start_time=1647546966.676129, end_time=1647546966.7530494, total_time_cost=0.0769202709197998 seconds
+tenant_1 Common tool initiated
+Creating the table for  tenant_id=tenant_1,  table_name=listings
+Starting the stream ingest
+Finished Stream Ingest 
+ status=success, tenant_id=tenant_1, table_name=listings, start_time=1647546966.8368738, end_time=1647546971.8891242, total_time_cost=5.052250385284424 seconds
+tenant_1 Common tool initiated
+Creating the table for  tenant_id=tenant_1,  table_name=listings
+Starting the stream ingest
+Finished Stream Ingest 
+ status=success, tenant_id=tenant_1, table_name=listings, start_time=1647546971.9814305, end_time=1647546977.0512965, total_time_cost=5.069865942001343 seconds
+tenant_1 Common tool initiated
+Creating the table for  tenant_id=tenant_1,  table_name=listings
+Starting the stream ingest
+Finished Stream Ingest 
+ status=success, tenant_id=tenant_1, table_name=listings, start_time=1647546977.1360493, end_time=1647546977.2116432, total_time_cost=0.07559394836425781 seconds
+tenant_1 Common tool initiated
+Creating the table for  tenant_id=tenant_1,  table_name=listings
+Starting the stream ingest
+Finished Stream Ingest 
+ status=success, tenant_id=tenant_1, table_name=listings, start_time=1647546977.2859159, end_time=1647546977.3380146, total_time_cost=0.052098751068115234 seconds
+tenant_1 Common tool initiated
+Creating the table for  tenant_id=tenant_1,  table_name=listings
+Starting the stream ingest
+Finished Stream Ingest 
+ status=success, tenant_id=tenant_1, table_name=listings, start_time=1647546977.4065187, end_time=1647546977.5902808, total_time_cost=0.1837620735168457 seconds
+tenant_1 Common tool initiated
+Creating the table for  tenant_id=tenant_1,  table_name=listings
+Starting the stream ingest
+Finished Stream Ingest 
+ status=success, tenant_id=tenant_1, table_name=listings, start_time=1647546977.6714375, end_time=1647546977.7274396, total_time_cost=0.056002140045166016 seconds
+tenant_1 Common tool initiated
+Creating the table for  tenant_id=tenant_1,  table_name=listings
+Starting the stream ingest
+Finished Stream Ingest 
+ status=success, tenant_id=tenant_1, table_name=listings, start_time=1647546982.807967, end_time=1647546982.8838594, total_time_cost=0.07589244842529297 seconds
+tenant_1 Common tool initiated
+Creating the table for  tenant_id=tenant_1,  table_name=listings
+Starting the stream ingest
+Finished Stream Ingest 
+ status=success, tenant_id=tenant_1, table_name=listings, start_time=1647546982.9521213, end_time=1647546983.0152347, total_time_cost=0.06311345100402832 seconds
+tenant_1 Common tool initiated
+Creating the table for  tenant_id=tenant_1,  table_name=listings
+Starting the stream ingest
+Finished Stream Ingest 
+ status=success, tenant_id=tenant_1, table_name=listings, start_time=1647546988.0741072, end_time=1647546988.153258, total_time_cost=0.07915091514587402 seconds
+tenant_1 Common tool initiated
+Creating the table for  tenant_id=tenant_1,  table_name=listings
+Starting the stream ingest
+Finished Stream Ingest 
+ status=success, tenant_id=tenant_1, table_name=listings, start_time=1647546993.2422388, end_time=1647546998.3280287, total_time_cost=5.085789918899536 seconds
+tenant_1 Common tool initiated
+Creating the table for  tenant_id=tenant_1,  table_name=listings
+Starting the stream ingest
+Finished Stream Ingest 
+ status=success, tenant_id=tenant_1, table_name=listings, start_time=1647547003.4172144, end_time=1647547008.4966466, total_time_cost=5.079432249069214 seconds
+tenant_1 Common tool initiated
+Creating the table for  tenant_id=tenant_1,  table_name=listings
+Starting the stream ingest
+Finished Stream Ingest 
+ status=success, tenant_id=tenant_1, table_name=listings, start_time=1647547008.5858197, end_time=1647547013.6582506, total_time_cost=5.072430849075317 seconds
+tenant_1 Common tool initiated
+Creating the table for  tenant_id=tenant_1,  table_name=listings
+Starting the stream ingest
+Finished Stream Ingest 
+ status=success, tenant_id=tenant_1, table_name=listings, start_time=1647547018.7393627, end_time=1647547018.8234835, total_time_cost=0.0841207504272461 seconds
+tenant_1 Common tool initiated
+Creating the table for  tenant_id=tenant_1,  table_name=listings
+Starting the stream ingest
+Finished Stream Ingest 
+ status=success, tenant_id=tenant_1, table_name=listings, start_time=1647547023.90895, end_time=1647547028.9825323, total_time_cost=5.073582172393799 seconds
+tenant_1 Common tool initiated
+Creating the table for  tenant_id=tenant_1,  table_name=listings
+Starting the stream ingest
+Finished Stream Ingest 
+ status=success, tenant_id=tenant_1, table_name=listings, start_time=1647547029.1083128, end_time=1647547034.1675909, total_time_cost=5.0592780113220215 seconds
+tenant_1 Common tool initiated
+Creating the table for  tenant_id=tenant_1,  table_name=listings
+Starting the stream ingest
+Finished Stream Ingest 
+ status=success, tenant_id=tenant_1, table_name=listings, start_time=1647547039.2582898, end_time=1647547044.3210053, total_time_cost=5.062715530395508 seconds
+tenant_1 Common tool initiated
+Creating the table for  tenant_id=tenant_1,  table_name=listings
+Starting the stream ingest
+Finished Stream Ingest 
+ status=success, tenant_id=tenant_1, table_name=listings, start_time=1647547044.4108956, end_time=1647547049.490138, total_time_cost=5.079242467880249 seconds
+tenant_1 Common tool initiated
+Creating the table for  tenant_id=tenant_1,  table_name=listings
+Starting the stream ingest
+Finished Stream Ingest 
+ status=success, tenant_id=tenant_1, table_name=listings, start_time=1647547054.5780208, end_time=1647547054.6600256, total_time_cost=0.08200478553771973 seconds
+tenant_1 Common tool initiated
+Creating the table for  tenant_id=tenant_1,  table_name=listings
+Starting the stream ingest
+Finished Stream Ingest 
+ status=success, tenant_id=tenant_1, table_name=listings, start_time=1647547059.7294269, end_time=1647547064.8086548, total_time_cost=5.079227924346924 seconds
+tenant_1 Common tool initiated
+Creating the table for  tenant_id=tenant_1,  table_name=listings
+Starting the stream ingest
+Finished Stream Ingest 
+ status=success, tenant_id=tenant_1, table_name=listings, start_time=1647547069.9238641, end_time=1647547069.9955637, total_time_cost=0.07169961929321289 seconds
+tenant_1 Common tool initiated
+Creating the table for  tenant_id=tenant_1,  table_name=listings
+Starting the stream ingest
+Finished Stream Ingest 
+ status=success, tenant_id=tenant_1, table_name=listings, start_time=1647547075.075754, end_time=1647547075.1590126, total_time_cost=0.08325862884521484 seconds
+tenant_1 Common tool initiated
+Creating the table for  tenant_id=tenant_1,  table_name=listings
+Starting the stream ingest
+Finished Stream Ingest 
+ status=success, tenant_id=tenant_1, table_name=listings, start_time=1647547075.2461197, end_time=1647547080.6832461, total_time_cost=5.437126398086548 seconds
+tenant_1 Common tool initiated
+Creating the table for  tenant_id=tenant_1,  table_name=listings
+Starting the stream ingest
+Finished Stream Ingest 
+ status=success, tenant_id=tenant_1, table_name=listings, start_time=1647547080.770347, end_time=1647547085.8523824, total_time_cost=5.082035303115845 seconds
+tenant_1 Common tool initiated
+Creating the table for  tenant_id=tenant_1,  table_name=listings
+Starting the stream ingest
+Finished Stream Ingest 
+ status=success, tenant_id=tenant_1, table_name=listings, start_time=1647547085.9500914, end_time=1647547091.02038, total_time_cost=5.07028865814209 seconds
+tenant_1 Common tool initiated
+Creating the table for  tenant_id=tenant_1,  table_name=listings
+Starting the stream ingest
+Finished Stream Ingest 
+ status=success, tenant_id=tenant_1, table_name=listings, start_time=1647547091.1141007, end_time=1647547096.1798325, total_time_cost=5.065731763839722 seconds
+tenant_1 Common tool initiated
+Creating the table for  tenant_id=tenant_1,  table_name=listings
+Starting the stream ingest
+Finished Stream Ingest 
+ status=success, tenant_id=tenant_1, table_name=listings, start_time=1647547101.2843008, end_time=1647547106.3527415, total_time_cost=5.068440675735474 seconds
+tenant_1 Common tool initiated
+Creating the table for  tenant_id=tenant_1,  table_name=listings
+Starting the stream ingest
+Finished Stream Ingest 
+ status=success, tenant_id=tenant_1, table_name=listings, start_time=1647547111.4420123, end_time=1647547111.5287583, total_time_cost=0.0867459774017334 seconds
+tenant_1 Common tool initiated
+Creating the table for  tenant_id=tenant_1,  table_name=listings
+Starting the stream ingest
+Finished Stream Ingest 
+ status=success, tenant_id=tenant_1, table_name=listings, start_time=1647547116.5905476, end_time=1647547121.6707237, total_time_cost=5.080176115036011 seconds
+tenant_1 Common tool initiated
+Creating the table for  tenant_id=tenant_1,  table_name=listings
+Starting the stream ingest
+Finished Stream Ingest 
+ status=success, tenant_id=tenant_1, table_name=listings, start_time=1647547121.7717729, end_time=1647547121.8362043, total_time_cost=0.06443142890930176 seconds
+tenant_1 Common tool initiated
+Creating the table for  tenant_id=tenant_1,  table_name=listings
+Starting the stream ingest
+Finished Stream Ingest 
+ status=success, tenant_id=tenant_1, table_name=listings, start_time=1647547126.9165738, end_time=1647547127.0201178, total_time_cost=0.10354399681091309 seconds
+tenant_1 Common tool initiated
+Creating the table for  tenant_id=tenant_1,  table_name=listings
+Starting the stream ingest
+Finished Stream Ingest 
+ status=success, tenant_id=tenant_1, table_name=listings, start_time=1647547127.1000535, end_time=1647547127.1619112, total_time_cost=0.06185770034790039 seconds
+tenant_1 Common tool initiated
+Creating the table for  tenant_id=tenant_1,  table_name=listings
+Starting the stream ingest
+Finished Stream Ingest 
+ status=success, tenant_id=tenant_1, table_name=listings, start_time=1647547127.2918317, end_time=1647547127.36732, total_time_cost=0.07548832893371582 seconds
+tenant_1 Common tool initiated
+Creating the table for  tenant_id=tenant_1,  table_name=listings
+Starting the stream ingest
+Finished Stream Ingest 
+ status=success, tenant_id=tenant_1, table_name=listings, start_time=1647547127.441526, end_time=1647547132.508644, total_time_cost=5.067118167877197 seconds
+tenant_1 Common tool initiated
+Creating the table for  tenant_id=tenant_1,  table_name=listings
+Starting the stream ingest
+Finished Stream Ingest 
+ status=success, tenant_id=tenant_1, table_name=listings, start_time=1647547137.6166801, end_time=1647547137.7012908, total_time_cost=0.0846107006072998 seconds
+tenant_1 Common tool initiated
+Creating the table for  tenant_id=tenant_1,  table_name=listings
+Starting the stream ingest
+Finished Stream Ingest 
+ status=success, tenant_id=tenant_1, table_name=listings, start_time=1647547137.796071, end_time=1647547137.862874, total_time_cost=0.066802978515625 seconds
+tenant_1 Common tool initiated
+Creating the table for  tenant_id=tenant_1,  table_name=listings
+Starting the stream ingest
+Finished Stream Ingest 
+ status=success, tenant_id=tenant_1, table_name=listings, start_time=1647547142.9512773, end_time=1647547148.0439975, total_time_cost=5.09272027015686 seconds
+tenant_1 Common tool initiated
+Creating the table for  tenant_id=tenant_1,  table_name=listings
+Starting the stream ingest
+Finished Stream Ingest 
+ status=success, tenant_id=tenant_1, table_name=listings, start_time=1647547148.1511407, end_time=1647547153.2306778, total_time_cost=5.0795371532440186 seconds
+tenant_1 Common tool initiated
+Creating the table for  tenant_id=tenant_1,  table_name=listings
+Starting the stream ingest
+Finished Stream Ingest 
+ status=success, tenant_id=tenant_1, table_name=listings, start_time=1647547158.3315518, end_time=1647547163.423863, total_time_cost=5.092311143875122 seconds
+tenant_1 Common tool initiated
+Creating the table for  tenant_id=tenant_1,  table_name=listings
+Starting the stream ingest
+Finished Stream Ingest 
+ status=success, tenant_id=tenant_1, table_name=listings, start_time=1647547168.5227497, end_time=1647547168.6175084, total_time_cost=0.09475874900817871 seconds
+tenant_1 Common tool initiated
+Creating the table for  tenant_id=tenant_1,  table_name=listings
+Starting the stream ingest
+Finished Stream Ingest 
+ status=success, tenant_id=tenant_1, table_name=listings, start_time=1647547173.709552, end_time=1647547178.7922692, total_time_cost=5.082717180252075 seconds
+tenant_1 Common tool initiated
+Creating the table for  tenant_id=tenant_1,  table_name=listings
+Starting the stream ingest
+Finished Stream Ingest 
+ status=success, tenant_id=tenant_1, table_name=listings, start_time=1647547178.901974, end_time=1647547183.96752, total_time_cost=5.065546035766602 seconds
+tenant_1 Common tool initiated
+Creating the table for  tenant_id=tenant_1,  table_name=listings
+Starting the stream ingest
+Finished Stream Ingest 
+ status=success, tenant_id=tenant_1, table_name=listings, start_time=1647547189.0802145, end_time=1647547194.1676986, total_time_cost=5.087484121322632 seconds
+tenant_1 Common tool initiated
+Creating the table for  tenant_id=tenant_1,  table_name=listings
+Starting the stream ingest
+Finished Stream Ingest 
+ status=success, tenant_id=tenant_1, table_name=listings, start_time=1647547194.2665899, end_time=1647547194.3760154, total_time_cost=0.10942554473876953 seconds
+tenant_1 Common tool initiated
+Creating the table for  tenant_id=tenant_1,  table_name=listings
+Starting the stream ingest
+Finished Stream Ingest 
+ status=success, tenant_id=tenant_1, table_name=listings, start_time=1647547194.5300627, end_time=1647547194.6543896, total_time_cost=0.12432694435119629 seconds
+tenant_1 Common tool initiated
+Creating the table for  tenant_id=tenant_1,  table_name=listings
+Starting the stream ingest
+Finished Stream Ingest 
+ status=success, tenant_id=tenant_1, table_name=listings, start_time=1647547199.7512546, end_time=1647547199.8425567, total_time_cost=0.09130215644836426 seconds
+tenant_1 Common tool initiated
+Creating the table for  tenant_id=tenant_1,  table_name=listings
+Starting the stream ingest
+Finished Stream Ingest 
+ status=success, tenant_id=tenant_1, table_name=listings, start_time=1647547204.9370327, end_time=1647547210.0258577, total_time_cost=5.088824987411499 seconds
+tenant_1 Common tool initiated
+Creating the table for  tenant_id=tenant_1,  table_name=listings
+Starting the stream ingest
+Finished Stream Ingest 
+ status=success, tenant_id=tenant_1, table_name=listings, start_time=1647547210.1307473, end_time=1647547210.206914, total_time_cost=0.07616662979125977 seconds
+tenant_1 Common tool initiated
+Creating the table for  tenant_id=tenant_1,  table_name=listings
+Starting the stream ingest
+Finished Stream Ingest 
+ status=success, tenant_id=tenant_1, table_name=listings, start_time=1647547215.2990215, end_time=1647547220.3893669, total_time_cost=5.09034538269043 seconds
+tenant_1 Common tool initiated
+Creating the table for  tenant_id=tenant_1,  table_name=listings
+Starting the stream ingest
+Finished Stream Ingest 
+ status=success, tenant_id=tenant_1, table_name=listings, start_time=1647547220.4965656, end_time=1647547220.5716746, total_time_cost=0.07510900497436523 seconds
+tenant_1 Common tool initiated
+Creating the table for  tenant_id=tenant_1,  table_name=listings
+Starting the stream ingest
+Finished Stream Ingest 
+ status=success, tenant_id=tenant_1, table_name=listings, start_time=1647547225.6607244, end_time=1647547226.067282, total_time_cost=0.406557559967041 seconds
+tenant_1 Common tool initiated
+Creating the table for  tenant_id=tenant_1,  table_name=listings
+Starting the stream ingest
+Finished Stream Ingest 
+ status=success, tenant_id=tenant_1, table_name=listings, start_time=1647547231.1367307, end_time=1647547231.2415116, total_time_cost=0.10478091239929199 seconds
+tenant_1 Common tool initiated
+Creating the table for  tenant_id=tenant_1,  table_name=listings
+Starting the stream ingest
+Finished Stream Ingest 
+ status=success, tenant_id=tenant_1, table_name=listings, start_time=1647547231.3481762, end_time=1647547236.4245408, total_time_cost=5.076364517211914 seconds
+tenant_1 Common tool initiated
+Creating the table for  tenant_id=tenant_1,  table_name=listings
+Starting the stream ingest
+Finished Stream Ingest 
+ status=success, tenant_id=tenant_1, table_name=listings, start_time=1647547241.5500996, end_time=1647547246.6154273, total_time_cost=5.0653276443481445 seconds
+tenant_1 Common tool initiated
+Creating the table for  tenant_id=tenant_1,  table_name=listings
+Starting the stream ingest
+Finished Stream Ingest 
+ status=success, tenant_id=tenant_1, table_name=listings, start_time=1647547251.7199059, end_time=1647547256.8011549, total_time_cost=5.081248998641968 seconds
+tenant_1 Common tool initiated
+Creating the table for  tenant_id=tenant_1,  table_name=listings
+Starting the stream ingest
+Finished Stream Ingest 
+ status=success, tenant_id=tenant_1, table_name=listings, start_time=1647547256.9131732, end_time=1647547261.9980881, total_time_cost=5.084914922714233 seconds
+tenant_1 Common tool initiated
+Creating the table for  tenant_id=tenant_1,  table_name=listings
+Starting the stream ingest
+Finished Stream Ingest 
+ status=success, tenant_id=tenant_1, table_name=listings, start_time=1647547267.113227, end_time=1647547272.2071953, total_time_cost=5.093968391418457 seconds
+tenant_1 Common tool initiated
+Creating the table for  tenant_id=tenant_1,  table_name=listings
+Starting the stream ingest
+Finished Stream Ingest 
+ status=success, tenant_id=tenant_1, table_name=listings, start_time=1647547272.3090172, end_time=1647547277.394382, total_time_cost=5.085364818572998 seconds
+tenant_1 Common tool initiated
+Creating the table for  tenant_id=tenant_1,  table_name=listings
+Starting the stream ingest
+Finished Stream Ingest 
+ status=success, tenant_id=tenant_1, table_name=listings, start_time=1647547282.5030987, end_time=1647547282.605663, total_time_cost=0.10256433486938477 seconds
+tenant_1 Common tool initiated
+Creating the table for  tenant_id=tenant_1,  table_name=listings
+Starting the stream ingest
+Finished Stream Ingest 
+ status=success, tenant_id=tenant_1, table_name=listings, start_time=1647547287.7065444, end_time=1647547292.8076715, total_time_cost=5.1011271476745605 seconds
+tenant_1 Common tool initiated
+Creating the table for  tenant_id=tenant_1,  table_name=listings
+Starting the stream ingest
+Finished Stream Ingest 
+ status=success, tenant_id=tenant_1, table_name=listings, start_time=1647547292.9175973, end_time=1647547293.0002208, total_time_cost=0.08262348175048828 seconds
+tenant_1 Common tool initiated
+Creating the table for  tenant_id=tenant_1,  table_name=listings
+Starting the stream ingest
+Finished Stream Ingest 
+ status=success, tenant_id=tenant_1, table_name=listings, start_time=1647547298.0960622, end_time=1647547303.190554, total_time_cost=5.094491720199585 seconds
+tenant_1 Common tool initiated
+Creating the table for  tenant_id=tenant_1,  table_name=listings
+Starting the stream ingest
+Finished Stream Ingest 
+ status=success, tenant_id=tenant_1, table_name=listings, start_time=1647547308.3157125, end_time=1647547313.4018955, total_time_cost=5.086183071136475 seconds
+tenant_1 Common tool initiated
+Creating the table for  tenant_id=tenant_1,  table_name=listings
+Starting the stream ingest
+Finished Stream Ingest 
+ status=success, tenant_id=tenant_1, table_name=listings, start_time=1647547313.5162663, end_time=1647547313.6108737, total_time_cost=0.09460735321044922 seconds
+tenant_1 Common tool initiated
+Creating the table for  tenant_id=tenant_1,  table_name=listings
+Starting the stream ingest
+Finished Stream Ingest 
+ status=success, tenant_id=tenant_1, table_name=listings, start_time=1647547313.7056584, end_time=1647547313.7903714, total_time_cost=0.08471298217773438 seconds
+tenant_1 Common tool initiated
+Creating the table for  tenant_id=tenant_1,  table_name=listings
+Starting the stream ingest
+Finished Stream Ingest 
+ status=success, tenant_id=tenant_1, table_name=listings, start_time=1647547318.8724167, end_time=1647547323.9857166, total_time_cost=5.11329984664917 seconds
+tenant_1 Common tool initiated
+Creating the table for  tenant_id=tenant_1,  table_name=listings
+Starting the stream ingest
+Finished Stream Ingest 
+ status=success, tenant_id=tenant_1, table_name=listings, start_time=1647547329.106348, end_time=1647547329.2133763, total_time_cost=0.10702824592590332 seconds
+tenant_1 Common tool initiated
+Creating the table for  tenant_id=tenant_1,  table_name=listings
+Starting the stream ingest
+Finished Stream Ingest 
+ status=success, tenant_id=tenant_1, table_name=listings, start_time=1647547334.308215, end_time=1647547334.4064386, total_time_cost=0.09822368621826172 seconds
+tenant_1 Common tool initiated
+Creating the table for  tenant_id=tenant_1,  table_name=listings
+Starting the stream ingest
+Finished Stream Ingest 
+ status=success, tenant_id=tenant_1, table_name=listings, start_time=1647547334.5083396, end_time=1647547334.5914633, total_time_cost=0.08312368392944336 seconds
+tenant_1 Common tool initiated
+Creating the table for  tenant_id=tenant_1,  table_name=listings
+Starting the stream ingest
+Finished Stream Ingest 
+ status=success, tenant_id=tenant_1, table_name=listings, start_time=1647547334.6802707, end_time=1647547334.7632456, total_time_cost=0.08297491073608398 seconds
+tenant_1 Common tool initiated
+Creating the table for  tenant_id=tenant_1,  table_name=listings
+Starting the stream ingest
+Finished Stream Ingest 
+ status=success, tenant_id=tenant_1, table_name=listings, start_time=1647547339.8330402, end_time=1647547344.9386456, total_time_cost=5.105605363845825 seconds
+tenant_1 Common tool initiated
+Creating the table for  tenant_id=tenant_1,  table_name=listings
+Starting the stream ingest
+Finished Stream Ingest 
+ status=success, tenant_id=tenant_1, table_name=listings, start_time=1647547350.0479617, end_time=1647547355.1514788, total_time_cost=5.103517055511475 seconds
+tenant_1 Common tool initiated
+Creating the table for  tenant_id=tenant_1,  table_name=listings
+Starting the stream ingest
+Finished Stream Ingest 
+ status=success, tenant_id=tenant_1, table_name=listings, start_time=1647547360.252658, end_time=1647547360.3489482, total_time_cost=0.09629034996032715 seconds
+tenant_1 Common tool initiated
+Creating the table for  tenant_id=tenant_1,  table_name=listings
+Starting the stream ingest
+Finished Stream Ingest 
+ status=success, tenant_id=tenant_1, table_name=listings, start_time=1647547360.4519224, end_time=1647547360.528437, total_time_cost=0.07651448249816895 seconds
+tenant_1 Common tool initiated
+Creating the table for  tenant_id=tenant_1,  table_name=listings
+Starting the stream ingest
+Finished Stream Ingest 
+ status=success, tenant_id=tenant_1, table_name=listings, start_time=1647547360.6060474, end_time=1647547365.670551, total_time_cost=5.0645036697387695 seconds
+tenant_1 Common tool initiated
+Creating the table for  tenant_id=tenant_1,  table_name=listings
+Starting the stream ingest
+Finished Stream Ingest 
+ status=success, tenant_id=tenant_1, table_name=listings, start_time=1647547370.770012, end_time=1647547375.8704875, total_time_cost=5.100475549697876 seconds
+tenant_1 Common tool initiated
+Creating the table for  tenant_id=tenant_1,  table_name=listings
+Starting the stream ingest
+Finished Stream Ingest 
+ status=success, tenant_id=tenant_1, table_name=listings, start_time=1647547375.9910767, end_time=1647547381.1050808, total_time_cost=5.114004135131836 seconds
+tenant_1 Common tool initiated
+Creating the table for  tenant_id=tenant_1,  table_name=listings
+Starting the stream ingest
+Finished Stream Ingest 
+ status=success, tenant_id=tenant_1, table_name=listings, start_time=1647547386.530734, end_time=1647547386.6366827, total_time_cost=0.10594868659973145 seconds
+tenant_1 Common tool initiated
+Creating the table for  tenant_id=tenant_1,  table_name=listings
+Starting the stream ingest
+Finished Stream Ingest 
+ status=success, tenant_id=tenant_1, table_name=listings, start_time=1647547386.7329757, end_time=1647547386.8087523, total_time_cost=0.07577657699584961 seconds
+tenant_1 Common tool initiated
+Creating the table for  tenant_id=tenant_1,  table_name=listings
+Starting the stream ingest
+Finished Stream Ingest 
+ status=success, tenant_id=tenant_1, table_name=listings, start_time=1647547391.8872793, end_time=1647547397.0002997, total_time_cost=5.113020420074463 seconds
+tenant_1 Common tool initiated
+Creating the table for  tenant_id=tenant_1,  table_name=listings
+Starting the stream ingest
+Finished Stream Ingest 
+ status=success, tenant_id=tenant_1, table_name=listings, start_time=1647547402.1513424, end_time=1647547407.2847743, total_time_cost=5.133431911468506 seconds
+tenant_1 Common tool initiated
+Creating the table for  tenant_id=tenant_1,  table_name=listings
+Starting the stream ingest
+Finished Stream Ingest 
+ status=success, tenant_id=tenant_1, table_name=listings, start_time=1647547412.4498293, end_time=1647547417.5824745, total_time_cost=5.132645130157471 seconds
+tenant_1 Common tool initiated
+Creating the table for  tenant_id=tenant_1,  table_name=listings
+Starting the stream ingest
+Finished Stream Ingest 
+ status=success, tenant_id=tenant_1, table_name=listings, start_time=1647547422.6894476, end_time=1647547423.238387, total_time_cost=0.5489394664764404 seconds
+tenant_1 Common tool initiated
+Creating the table for  tenant_id=tenant_1,  table_name=listings
+Starting the stream ingest
+Finished Stream Ingest 
+ status=success, tenant_id=tenant_1, table_name=listings, start_time=1647547423.3363664, end_time=1647547423.3976898, total_time_cost=0.06132340431213379 seconds
+tenant_1 Common tool initiated
+Creating the table for  tenant_id=tenant_1,  table_name=listings
+Starting the stream ingest
+Finished Stream Ingest 
+ status=success, tenant_id=tenant_1, table_name=listings, start_time=1647547423.482561, end_time=1647547428.5822103, total_time_cost=5.09964919090271 seconds
+tenant_1 Common tool initiated
+Creating the table for  tenant_id=tenant_1,  table_name=listings
+Starting the stream ingest
+Finished Stream Ingest 
+ status=success, tenant_id=tenant_1, table_name=listings, start_time=1647547433.7202253, end_time=1647547438.8381426, total_time_cost=5.11791729927063 seconds
+tenant_1 Common tool initiated
+Creating the table for  tenant_id=tenant_1,  table_name=listings
+Starting the stream ingest
+Finished Stream Ingest 
+ status=success, tenant_id=tenant_1, table_name=listings, start_time=1647547443.990449, end_time=1647547449.1040225, total_time_cost=5.1135735511779785 seconds
+tenant_1 Common tool initiated
+Creating the table for  tenant_id=tenant_1,  table_name=listings
+Starting the stream ingest
+Finished Stream Ingest 
+ status=success, tenant_id=tenant_1, table_name=listings, start_time=1647547454.247473, end_time=1647547459.3620477, total_time_cost=5.114574670791626 seconds
+tenant_1 Common tool initiated
+Creating the table for  tenant_id=tenant_1,  table_name=listings
+Starting the stream ingest
+Finished Stream Ingest 
+ status=success, tenant_id=tenant_1, table_name=listings, start_time=1647547464.5322728, end_time=1647547464.6414642, total_time_cost=0.1091914176940918 seconds
+tenant_1 Common tool initiated
+Creating the table for  tenant_id=tenant_1,  table_name=listings
+Starting the stream ingest
+Finished Stream Ingest 
+ status=success, tenant_id=tenant_1, table_name=listings, start_time=1647547469.7629173, end_time=1647547469.8735876, total_time_cost=0.11067032814025879 seconds
+tenant_1 Common tool initiated
+Creating the table for  tenant_id=tenant_1,  table_name=listings
+Starting the stream ingest
+Finished Stream Ingest 
+ status=success, tenant_id=tenant_1, table_name=listings, start_time=1647547474.9590967, end_time=1647547480.0651572, total_time_cost=5.10606050491333 seconds
+tenant_1 Common tool initiated
+Creating the table for  tenant_id=tenant_1,  table_name=listings
+Starting the stream ingest
+Finished Stream Ingest 
+ status=success, tenant_id=tenant_1, table_name=listings, start_time=1647547485.1774316, end_time=1647547485.3210618, total_time_cost=0.1436302661895752 seconds
+tenant_1 Common tool initiated
+Creating the table for  tenant_id=tenant_1,  table_name=listings
+Starting the stream ingest
+Finished Stream Ingest 
+ status=success, tenant_id=tenant_1, table_name=listings, start_time=1647547490.4621184, end_time=1647547495.5677266, total_time_cost=5.105608224868774 seconds
+tenant_1 Common tool initiated
+Creating the table for  tenant_id=tenant_1,  table_name=listings
+Starting the stream ingest
+Finished Stream Ingest 
+ status=success, tenant_id=tenant_1, table_name=listings, start_time=1647547495.7070801, end_time=1647547495.805104, total_time_cost=0.09802389144897461 seconds
+tenant_1 Common tool initiated
+Creating the table for  tenant_id=tenant_1,  table_name=listings
+Starting the stream ingest
+Finished Stream Ingest 
+ status=success, tenant_id=tenant_1, table_name=listings, start_time=1647547500.9085124, end_time=1647547501.0168192, total_time_cost=0.108306884765625 seconds
+tenant_1 Common tool initiated
+Creating the table for  tenant_id=tenant_1,  table_name=listings
+Starting the stream ingest
+Finished Stream Ingest 
+ status=success, tenant_id=tenant_1, table_name=listings, start_time=1647547506.1322544, end_time=1647547511.2338445, total_time_cost=5.101590156555176 seconds
+tenant_1 Common tool initiated
+Creating the table for  tenant_id=tenant_1,  table_name=listings
+Starting the stream ingest
+Finished Stream Ingest 
+ status=success, tenant_id=tenant_1, table_name=listings, start_time=1647547516.3540406, end_time=1647547516.464679, total_time_cost=0.11063838005065918 seconds
+tenant_1 Common tool initiated
+Creating the table for  tenant_id=tenant_1,  table_name=listings
+Starting the stream ingest
+Finished Stream Ingest 
+ status=success, tenant_id=tenant_1, table_name=listings, start_time=1647547516.5618813, end_time=1647547516.6402452, total_time_cost=0.07836389541625977 seconds
+tenant_1 Common tool initiated
+Creating the table for  tenant_id=tenant_1,  table_name=listings
+Starting the stream ingest
+Finished Stream Ingest 
+ status=success, tenant_id=tenant_1, table_name=listings, start_time=1647547521.7332761, end_time=1647547521.8668723, total_time_cost=0.13359618186950684 seconds
+tenant_1 Common tool initiated
+Creating the table for  tenant_id=tenant_1,  table_name=listings
+Starting the stream ingest
+Finished Stream Ingest 
+ status=success, tenant_id=tenant_1, table_name=listings, start_time=1647547527.0356169, end_time=1647547527.138527, total_time_cost=0.10291004180908203 seconds
+tenant_1 Common tool initiated
+Creating the table for  tenant_id=tenant_1,  table_name=listings
+Starting the stream ingest
+Finished Stream Ingest 
+ status=success, tenant_id=tenant_1, table_name=listings, start_time=1647547527.2554586, end_time=1647547527.3493857, total_time_cost=0.09392714500427246 seconds
+tenant_1 Common tool initiated
+Creating the table for  tenant_id=tenant_1,  table_name=listings
+Starting the stream ingest
+Finished Stream Ingest 
+ status=success, tenant_id=tenant_1, table_name=listings, start_time=1647547532.4347134, end_time=1647547537.5431104, total_time_cost=5.108397006988525 seconds
+tenant_1 Common tool initiated
+Creating the table for  tenant_id=tenant_1,  table_name=listings
+Starting the stream ingest
+Finished Stream Ingest 
+ status=success, tenant_id=tenant_1, table_name=listings, start_time=1647547542.6805398, end_time=1647547547.8068144, total_time_cost=5.126274585723877 seconds
+tenant_1 Common tool initiated
+Creating the table for  tenant_id=tenant_1,  table_name=listings
+Starting the stream ingest
+Finished Stream Ingest 
+ status=success, tenant_id=tenant_1, table_name=listings, start_time=1647547547.943596, end_time=1647547553.0263963, total_time_cost=5.082800388336182 seconds
+tenant_1 Common tool initiated
+Creating the table for  tenant_id=tenant_1,  table_name=listings
+Starting the stream ingest
+Finished Stream Ingest 
+ status=success, tenant_id=tenant_1, table_name=listings, start_time=1647547553.1425114, end_time=1647547558.229173, total_time_cost=5.0866615772247314 seconds
+tenant_1 Common tool initiated
+Creating the table for  tenant_id=tenant_1,  table_name=listings
+Starting the stream ingest
+Finished Stream Ingest 
+ status=success, tenant_id=tenant_1, table_name=listings, start_time=1647547558.3663325, end_time=1647547558.4750512, total_time_cost=0.1087186336517334 seconds
+tenant_1 Common tool initiated
+Creating the table for  tenant_id=tenant_1,  table_name=listings
+Starting the stream ingest
+Finished Stream Ingest 
+ status=success, tenant_id=tenant_1, table_name=listings, start_time=1647547563.5830889, end_time=1647547568.6978092, total_time_cost=5.114720344543457 seconds
+tenant_1 Common tool initiated
+Creating the table for  tenant_id=tenant_1,  table_name=listings

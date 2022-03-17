@@ -1,9 +1,7 @@
 import os
 from datetime import datetime
 import sys
-UTILS_PATH = os.getcwd()
 print(os.getcwd())
-sys.path.append(UTILS_PATH)
 import csv
 import requests
 import logging
