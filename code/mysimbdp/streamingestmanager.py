@@ -9,7 +9,6 @@ import threading
 import json
 import importlib
 
-RB_HOST = "35.228.109.23"
 CRENDENTIALS = pika.PlainCredentials('mysimbdp', 'mysimbdp')
 CURRENT_DIRECTORY = os.getcwd()
 
@@ -39,6 +38,8 @@ class ConsumerThread(threading.Thread):
             # bind queue to exchange
             channel.queue_bind(exchange='default', queue=queue_name, routing_key=table)
             # define what to do when accept data from rabbitmq
+            print("Before call back " +table)
+               
             def callback(ch, method, properties, body):
                 print(" [mysimbdp-streamingestmanager] <Tenant={} Table={}> Received msg".format(self._tenant['tenant_id'], table, body.decode()))
                 current_directory = os.getcwd()
@@ -47,13 +48,13 @@ class ConsumerThread(threading.Thread):
                 #os.system("python3 {current}/../client_ingest_apps/{tenant_id}/clientstreamingestapp.py {table_name} {file_name}".format(current=CURRENT_DIRECTORY, tenant_id=self._tenant['tenant_id'], table_name=table, file_name=body.decode()))
                 print("Trying to upload module")
                 
-                clientstreamingestapp = importlib.import_module("..client_ingest_apps.{}.clientstreamingestapp.py".format(self._tenant['tenant_id']))
-                clientstreamingestapp.stream_ingest(table,body.decode())
+                #clientstreamingestapp = importlib.import_module("..client_ingest_apps.{}.clientstreamingestapp.py".format(self._tenant['tenant_id'])).ClienStreamIngestApp()
+                #clientstreamingestapp.stream_ingest(table,body.decode())
      
                  # ack the message
                 ch.basic_ack(delivery_tag = method.delivery_tag)
             # consume the queue
-            channel.basic_consume(queue=queue_name, on_message_callback=callback)
+            channel.basic_consume(queue=queue_name, on_message_callback=callback,auto_ack=True)
 
         print('[mysimbdp-streamingestmanager] Start consuming vhost: {}'.format(self._tenant['tenant_id']))
         channel.start_consuming()
@@ -64,7 +65,7 @@ def main():
     tenants = [
         {
             'tenant_id': 'tenant_1',
-            'tables': ['listing']
+            'tables': ['listings']
          }#,
         # {
         #     'tenant_id': 'tenant_2',

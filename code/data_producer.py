@@ -87,7 +87,7 @@ for tenant in tenants['tenants']:
             #print("start")
             channel.basic_publish(exchange='default', routing_key=table['table_name'], body=json.dumps(data))
             #print("middle")
-            
+            print (data)
             #print("stop")
             
             #print("continue")
