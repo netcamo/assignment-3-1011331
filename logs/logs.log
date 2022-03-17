@@ -87,3 +87,9 @@ INFO:MYSIMBDP Logger:Finished the ingestion
  status=success, tenant_id=tenant_2, file_name=data.csv, file_size_bytes=470514, table_name=New_table_2, ingestion_rows=5556, total_time_cost=77.65294480323792 seconds
 INFO:tenant_2Logger::Finished the ingestion 
  status=success, tenant_id=tenant_2, file_name=data.csv, file_size_bytes=470514, table_name=New_table_2, ingestion_rows=5556, total_time_cost=77.65294480323792 seconds
+INFO:MYSIMBDP Logger:Started MYSIMBDP Logger
+INFO:MYSIMBDP Logger:Started MYSIMBDP Logger
+INFO:MYSIMBDP Logger:Started MYSIMBDP Logger
+INFO:MYSIMBDP Logger:Started MYSIMBDP Logger
+INFO:MYSIMBDP Logger:Started MYSIMBDP Logger
+INFO:MYSIMBDP Logger:Started MYSIMBDP Logger

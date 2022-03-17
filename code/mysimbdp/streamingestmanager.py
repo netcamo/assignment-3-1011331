@@ -21,6 +21,7 @@ class ConsumerThread(threading.Thread):
 
         self._host = '0.0.0.0'
         self._tenant = tenant
+        self._count=0
 
     def run(self):
        
@@ -39,18 +40,24 @@ class ConsumerThread(threading.Thread):
             channel.queue_bind(exchange='default', queue=queue_name, routing_key=table)
             # define what to do when accept data from rabbitmq
             print("Before call back " +table)
-               
+
             def callback(ch, method, properties, body):
                 print(" [mysimbdp-streamingestmanager] <Tenant={} Table={}> Received msg".format(self._tenant['tenant_id'], table, body.decode()))
                 current_directory = os.getcwd()
                 # invoke customer's clientstreamingestapp
+                self._count+=1
+                print(self._count)
 
                 #os.system("python3 {current}/../client_ingest_apps/{tenant_id}/clientstreamingestapp.py {table_name} {file_name}".format(current=CURRENT_DIRECTORY, tenant_id=self._tenant['tenant_id'], table_name=table, file_name=body.decode()))
-                print("Trying to upload module")
+                #print("Trying to upload module")
+                #print (CURRENT_DIRECTORY)
+                sys.path.insert(0, CURRENT_DIRECTORY+'/../client_ingest_apps/{}'.format(self._tenant['tenant_id']))
+                from clientstreamingestapp  import ClienStreamIngestApp
+                #clientstreamingestapp = importlib.import_module("...client_ingest_apps.{}.clientstreamingestapp".format(self._tenant['tenant_id']),package='ClientStreamIngestApp')
+                #clientstreamingestapp.stream_ingest(table,body.decode())
+                cliStreamApp=ClienStreamIngestApp()
+                cliStreamApp.stream_ingest(table,body.decode())
                 
-                clientstreamingestapp = importlib.import_module("..client_ingest_apps.{}.clientstreamingestapp.py".format(self._tenant['tenant_id']),package='ClientStreamIngestApp').ClienStreamIngestApp()
-                clientstreamingestapp.stream_ingest(table,body.decode())
-     
                  # ack the message
                 #ch.basic_ack(delivery_tag = method.delivery_tag)
             # consume the queue

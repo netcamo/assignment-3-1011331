@@ -58,6 +58,6 @@ class ClienStreamIngestApp():
             }
 
                 
-        print ("Table and data are" + table_name ,data)
+        #print ("Table and data are" + table_name ,data)
 
    
