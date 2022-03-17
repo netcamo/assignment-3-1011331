@@ -24,7 +24,12 @@ class ConsumerThread(threading.Thread):
         self._count=0
 
     def run(self):
-       
+        headers = {
+            'content-type': 'application/json',
+        }
+        
+        response = requests.put('http://localhost:15672/api/vhosts/{}'.format(self._tenant['tenant_id']), headers=headers, auth=('mysimbdp', 'mysimbdp'))
+
         connection = pika.BlockingConnection(pika.ConnectionParameters(host=self._host, virtual_host=self._tenant['tenant_id'], credentials=CRENDENTIALS))
         channel = connection.channel()
 

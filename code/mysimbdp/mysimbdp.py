@@ -111,4 +111,116 @@ class MySimBdp_CommonTool():
             'total_time_cost_seconds': (end_time-start_time)
         }
 
+    def start_stream_ingest_job(self, tenant_config, table_n_data):
+
+        # examine tenant_id
+        if 'tenant_id' not in tenant_config or not tenant_config['tenant_id']:
+            return {
+                'status': 'error',
+                'msg': 'Parameter tenant_id is missing'
+            }
+
+        # examine ingest task
+        required_paras = ['data', 'table_name']
+        for para in required_paras:
+            if para not in table_n_data or not table_n_data[para]:
+                return {
+                    'status': 'error',
+                    'msg': 'Parameter {} is missing'.format(para)
+                }
+
+        # examine if table metadata exists
+        table_metadata = None
+        for table in tenant_config['tables']:
+            if table['table_name'] == table_n_data['table_name']:
+                table_metadata = table
+
+        if not table_metadata:
+            return {
+                'status': 'error',
+                'msg': 'Table metadata is missing'
+            }
+
+        logger_tenant = setup_logger(str(tenant_config['tenant_id'])+'Stream Logger:', os.getcwd() + '/../../logs/'+str(tenant_config['tenant_id'])+'_stream_logs.log')
+        logger_tenant.info('Tenant Common tool initiated')
+        
+        logger.info("Creating the table for  tenant_id={},  table_name={}".format( tenant_config['tenant_id'], table_n_data['table_name']))
+        logger_tenant.info("Creating the table for  tenant_id={},  table_name={}".format( tenant_config['tenant_id'], table_n_data['table_name']))
+        
+        
+        print("requesting creation of table " + tenant_config['tenant_id']+" "+table_n_data["table_name"])
+        print("http://localhost:5000/{}/create_table".format(tenant_config['tenant_id']))
+        res = requests.post("http://localhost:5000/{}/create_table".format(tenant_config['tenant_id']), json={"table":table_metadata})
+
+        if res.status_code != 200:
+            logger.info("Error while creating the Table")
+            logger_tenant.info("Creating the table for  tenant_id={}, table_name={}".format( tenant_config['tenant_id'], table_n_data['table_name']))
+
+            return "Error while creating the Table"
+   
+
+
+        start_time = time()
+        
+        res = requests.post("http://localhost:5000/{}/stream_ingest".format(tenant_config['tenant_id']), json={'table_name': table_n_data['table_name'], 'data': table_n_data['data']})
+        end_time = time()
+
+        # log and return ingestion result
+        if res.status_code == 200:
+
+            logger_tenant.info("[Stream ingestion] status={}, tenant_id={}, table_name={}, start_time={}, end_time={}, total_time_cost={} seconds".format(
+                'success',
+                tenant_config['tenant_id'],
+                table_n_data['table_name'],
+                start_time,
+                end_time,
+                (end_time-start_time)
+                )
+            )
+            logger.info("[Stream ingestion] status={}, tenant_id={}, table_name={}, start_time={}, end_time={}, total_time_cost={} seconds".format(
+                'success',
+                tenant_config['tenant_id'],
+                table_n_data['table_name'],
+                start_time,
+                end_time,
+                (end_time-start_time)
+                )
+            )
+            return {
+                'status': 'success',
+                'tenant_id': tenant_config['tenant_id'],
+                'table_name': table_n_data['table_name'],
+                'start_time': start_time,
+                'end_time': end_time,
+                'total_time_cost_seconds': (end_time-start_time)
+            }
+        else:
+            logger_tenant.info("[Stream ingestion] status={}, tenant_id={}, table_name={}, start_time={}, end_time={}, total_time_cost={} seconds".format(
+                'failed',
+                tenant_config['tenant_id'],
+                table_n_data['table_name'],
+                start_time,
+                end_time,
+                (end_time-start_time)
+                )
+            )
+            logger.info("[Stream ingestion] status={}, tenant_id={}, table_name={}, start_time={}, end_time={}, total_time_cost={} seconds".format(
+                'failed',
+                tenant_config['tenant_id'],
+                table_n_data['table_name'],
+                start_time,
+                end_time,
+                (end_time-start_time)
+                )
+            )
+            return {
+                'status': 'failed',
+                'tenant_id': tenant_config['tenant_id'],
+                'table_name': table_n_data['table_name'],
+                'start_time': start_time,
+                'end_time': end_time,
+                'total_time_cost_seconds': (end_time-start_time)
+            }
+
+
 

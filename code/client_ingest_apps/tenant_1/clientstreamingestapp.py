@@ -11,7 +11,7 @@ import pandas as pd
 from cassandra.query import BatchStatement
 from cassandra import ConsistencyLevel
 from mysimbdp import MySimBdp_CommonTool
-
+import json
 
 
 
@@ -57,7 +57,16 @@ class ClienStreamIngestApp():
                 ]
             }
 
-                
+        table_n_data= {
+        "table_name": table_name,
+        "data": json.loads(data)
+    }
+        client = MySimBdp_CommonTool()
+        
+        result = client.start_stream_ingest_job(configuration, table_n_data)
+        print(result)
+
+               
         #print ("Table and data are" + table_name ,data)
 
    
