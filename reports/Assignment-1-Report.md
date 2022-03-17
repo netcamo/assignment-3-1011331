@@ -203,11 +203,20 @@ multi-tenancy model in mysimbdp: which parts of the mysimbdp will be shared for 
 for individual tenants so that mysimbdp can add and remove tenants based on the principle of pay-per-use. Design and
 explain a set of constraints for the tenant service profile w.r.t. data ingestion.* 
 
+ As a Messagging system I have decided to use RabbitMQ since it is a widely used too lfor such systems and I had prior basic knowdledge about it. As we have leveraged  CassandraDB's features like keyspaces to isolate different tenant's data and operations we can do a similar isolation using vhost feature in RabbitMQ. Thus all tenants will share same server of RabbitMQ but still they will have different vhosts to differentiate between their message queues. We can also leverage  Routing keys in every vhost  to use as our message queues. This way all data producer needs to do is to send its message with approppriate routing key  to start ingestion to the right table.
+
+ As in a previous part our mysimbdp can have constraint JSON file which contains all the tenant's and their individual specific constraints. Thus our platform can control all the constraint and accesses through this unique file but at the same  time it would still be able to define everything for individual tenants. We can have different constraint json files for streaming and ingestion or we can also have 2 different files to further isolate batch and stream ingestion proceses. Constraints can have limits for tables to limit number of queues, we can limit size of a queue or size of a message.
+
+ As before we as a platform provider provide CommonTool for clientingestapps to provide stream ingestiona features. Design will be similar to batch ingestion at mysimbdp side but a bit different on data input and handling side. This will be discussed more in details in next questions but overall Design looks like :
+
+
+
+![Stream Design](stream_design.png "Stream Design")
 
 
 
 
-2. *Design and implement a component mysimbdp-streamingestmanager, which can start and stop clientstreamingestapp
+1. *Design and implement a component mysimbdp-streamingestmanager, which can start and stop clientstreamingestapp
 instances on-demand. mysimbdp imposes the model that clientstreamingestapp has to follow so that mysimbdpstreamingestmanager can invoke clientstreamingestapp as a blackbox, explain the model.* 
 
 3. *Develop test ingestion programs (clientstreamingestapp), test data, and test service profiles for tenants. Show the
