@@ -280,17 +280,35 @@ situation. Implementation a feature in mysimbdp-streamingestmanager to receive i
 
 1. *Produce an integrated architecture for the logging and monitoring of both batch and near-realtime ingestion features (Part 1,
 Point 5 and Part 2, Points 4-5) so that you as a platform provider could know the amount of data ingested and existing
-errors/performance for individual tenants.* 
+errors/performance for individual tenants.*
+
+I have already implemented logging features for both batch ingestion and stream ingestion. We could add another component which takes all the log files from both log files and constructs overall statistics from those by combining them.
+
+
 2. *In the stream ingestion pipeline, assume that a tenant has to ingest the same data but to different sinks, e.g., mybdpcoredms for storage and a new mybdp-streamdataprocessing component, what features/solutions you can provide and
 recommend to your tenant?*
+
+
+As I have already provided mysimbdpCommon tool I could change implementation a bit and provide 2 different common tools one for each sink. Or I could implement both common tools in the one and tenant could choose the sink by providing additional argument. I would recommend separate common tools to isolate implementation of both sinks anbd provide more freely configuration options according to each sinks design.
+
+
+
+
 3. *The tenant wants to protect the data during the ingestion using some encryption mechanisms, e.g., clientbatchingestapp
 and clientstreamingestapp have to deal with encrypted data. Which features/solutions you recommend the tenants and
 which services you might support them for this goal?*
 
+
+instead of saving the data plainly to the DB we could save hashed data. Additionally right now connections between all components are provided by HTTP but we could improve security by making all of them work with HTTPS which is encrypted.
+
+
 4. *In the case of batch ingestion, we want to (i) detect the quality of data to allow ingestion only for data with a pre-defined
 quality of data condition and (ii) store metadata, including detected quality, into the platform, how you, as a platform provider,
 and your tenants can work together?*
+
+
 5. *If a tenant has multiple clientbatchingestapp and clientstreamingestapp, each is suitable for a type of data and has
 different workloads (e.g., different CPUs, memory consumption and execution time), how would you extend your design and
 implementation in Parts 1 & 2 (only explain the concept/design) to support this requirement?*
+
 
