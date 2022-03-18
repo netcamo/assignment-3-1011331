@@ -51,10 +51,10 @@ headers = {
     'content-type': 'application/json',
 }
 for tenant in tenants['tenants']:
-    response = requests.put('http://localhost:15672/api/vhosts/{}'.format(tenant['tenant_id']), headers=headers, auth=('mysimbdp', 'mysimbdp'))
+    response = requests.put('http://localhost:15672/api/vhosts/{}'.format(tenant['tenant_id']), headers=headers, auth=('rbmq', 'rbmq'))
 
     
-    CRENDENTIALS = pika.PlainCredentials('mysimbdp', 'mysimbdp')
+    CRENDENTIALS = pika.PlainCredentials('rbmq', 'rbmq')
     connection = pika.BlockingConnection(pika.ConnectionParameters(host="0.0.0.0", virtual_host=tenant['tenant_id'], credentials=CRENDENTIALS))
     channel = connection.channel()
 

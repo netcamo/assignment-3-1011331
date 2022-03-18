@@ -10,7 +10,7 @@ import json
 import importlib
 
 
-CRENDENTIALS = pika.PlainCredentials('mysimbdp', 'mysimbdp')
+CRENDENTIALS = pika.PlainCredentials('rbmq', 'rbmq')
 CURRENT_DIRECTORY = os.getcwd()
 
 

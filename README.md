@@ -1,4 +1,4 @@
-# Assignment 1  1011331
+# Assignment 2  1011331
 
 In directory Code you will find all the code related to the project.
 
