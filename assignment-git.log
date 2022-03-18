@@ -1,8 +1,188 @@
-commit f45d0b14df71cec358518a80b96e1acc195d83ce
+commit ba17a7c65abd6e57faa862d85d57339fc401421b
 Author: yagublj1 <jeyhun.yagublu@aalto.fi>
-Date:   Fri Feb 18 10:31:22 2022 +0200
+Date:   Fri Mar 18 03:44:19 2022 +0200
 
-    final touches
+    Starting part 3
+
+commit 6d8d46e68e53a3e927434abd81e1c18dabd9c5ed
+Author: yagublj1 <jeyhun.yagublu@aalto.fi>
+Date:   Fri Mar 18 03:20:40 2022 +0200
+
+    finished part 2 now writing deployment rreport
+
+commit 2c8c48b7ce7f18c4773262594e13c8db7f2c1135
+Author: yagublj1 <jeyhun.yagublu@aalto.fi>
+Date:   Fri Mar 18 00:04:45 2022 +0200
+
+    Everything works final code probably
+
+commit 5b9fa18391f615497c05d2266bf444c48076a605
+Author: yagublj1 <jeyhun.yagublu@aalto.fi>
+Date:   Thu Mar 17 22:06:52 2022 +0200
+
+    Everything works final code probably
+
+commit 9d1b5f4db806c74d80450c78301b34f76ce1fdc5
+Author: yagublj1 <jeyhun.yagublu@aalto.fi>
+Date:   Thu Mar 17 16:47:05 2022 +0200
+
+    Cassandra ingestion works and somehow done, having a breakdown hahaha
+
+commit 91dc0718d6bf838a86b255262cef20f9019ccec2
+Author: yagublj1 <jeyhun.yagublu@aalto.fi>
+Date:   Thu Mar 17 03:55:13 2022 +0200
+
+    Consumer done + count analytics
+
+commit 5f3f0f105bd494ee8103350c373892cc1fe09592
+Author: yagublj1 <jeyhun.yagublu@aalto.fi>
+Date:   Thu Mar 17 03:35:06 2022 +0200
+
+    Producer done
+
+commit 69fa88c21ed42247a7563ed02e07f61eeab1d759
+Author: yagublj1 <jeyhun.yagublu@aalto.fi>
+Date:   Thu Mar 17 03:31:41 2022 +0200
+
+    Producer done
+
+commit ae92a77fafa31bba7dc7be93392800dc83d25941
+Author: yagublj1 <jeyhun.yagublu@aalto.fi>
+Date:   Thu Mar 17 03:21:16 2022 +0200
+
+    Producer done
+
+commit a48b40d05f70729e329d5630cb05b2671b5f2626
+Author: yagublj1 <jeyhun.yagublu@aalto.fi>
+Date:   Thu Mar 17 02:48:48 2022 +0200
+
+    Producer done
+
+commit 3c492f700afb9c6d8eca3968c52b485791f0f3a4
+Author: yagublj1 <jeyhun.yagublu@aalto.fi>
+Date:   Thu Mar 17 02:13:38 2022 +0200
+
+    Trying to ocnfigure and connect rabbitmq
+
+commit dd00ee5b50ddae681807112766b4493433f05e1c
+Author: yagublj1 <jeyhun.yagublu@aalto.fi>
+Date:   Wed Mar 16 18:16:39 2022 +0200
+
+    Part 2 start
+
+commit 336d1a188647f474a279ee4dcc388358cc5c20e6
+Author: yagublj1 <jeyhun.yagublu@aalto.fi>
+Date:   Wed Mar 16 16:49:33 2022 +0200
+
+    1.3
+
+commit 36c4ad0be26eaf2a67628fda3c5c739b850b0560
+Author: yagublj1 <jeyhun.yagublu@aalto.fi>
+Date:   Wed Mar 16 16:47:04 2022 +0200
+
+    1.3
+
+commit 25339330327bd7d9014193fb8803d97697033fdb
+Author: yagublj1 <jeyhun.yagublu@aalto.fi>
+Date:   Wed Mar 16 16:28:49 2022 +0200
+
+    1.3
+
+commit 01e1f535805fb8ba1a9e76d73aac8f588d5d97b2
+Author: yagublj1 <jeyhun.yagublu@aalto.fi>
+Date:   Wed Mar 16 16:07:14 2022 +0200
+
+    1.3
+
+commit c3de659fcf34a2c468fed18d16e097328021fffd
+Author: yagublj1 <jeyhun.yagublu@aalto.fi>
+Date:   Wed Mar 16 15:32:44 2022 +0200
+
+    1.2
+
+commit 9f14d29a234d407123af142f9dcd343bd3e8fad2
+Author: yagublj1 <jeyhun.yagublu@aalto.fi>
+Date:   Wed Mar 16 15:18:18 2022 +0200
+
+    1.1
+
+commit ba0299a0a37dcd47dd98cafc9459af2ca1e0d445
+Author: yagublj1 <jeyhun.yagublu@aalto.fi>
+Date:   Tue Mar 15 23:31:03 2022 +0200
+
+    Part 1 without report because I accidentally deleted all report :''''''''(
+
+commit 70ce0c71de5706454cc4e508245b635c2fb780ed
+Author: yagublj1 <jeyhun.yagublu@aalto.fi>
+Date:   Mon Mar 14 08:03:20 2022 +0200
+
+    init
+
+commit 2bf4a06d794e891ecd01981566977c437665fd80
+Author: yagublj1 <jeyhun.yagublu@aalto.fi>
+Date:   Sun Mar 13 16:58:32 2022 +0200
+
+    initial commit
+
+commit 4cf8b6d923fff829658d6ff7e8ab75a054e7ef38
+Author: Jeyhun Yagublu <jeyhun.yagublu@aalto.fi>
+Date:   Fri Mar 11 09:20:20 2022 +0200
+
+    start
+
+commit a42e3942f03adfa84d682651e0520bed612bd579
+Author: Jeyhun Yagublu <jeyhun.yagublu@aalto.fi>
+Date:   Fri Mar 11 09:20:01 2022 +0200
+
+    start
+
+commit 27b289b3c4e3c7abdfd6c5b8bba11bf68c322e58
+Author: Jeyhun Yagublu <jeyhun.yagublu@aalto.fi>
+Date:   Thu Mar 10 19:45:04 2022 +0200
+
+     deleted identifiers
+
+commit 46e389eb12450cf791184c7995eb78a8cf84527a
+Author: netcamo <cyaqublu@gmail.com>
+Date:   Fri Feb 18 09:53:11 2022 +0100
+
+    Update README.md
+
+commit 785e3980e3d68c5acf2aacfeb27a02a49dfaab62
+Author: netcamo <cyaqublu@gmail.com>
+Date:   Fri Feb 18 09:52:46 2022 +0100
+
+    Update Assignment-1-Report.md
+
+commit a7c0ed84c53b1178628b933778a10dc91ffddeb0
+Author: netcamo <cyaqublu@gmail.com>
+Date:   Fri Feb 18 09:52:27 2022 +0100
+
+    Update Assignment-1-Deployment.md
+
+commit f44d76b72dc4d1fc485a40ffd6df54590755337a
+Author: netcamo <cyaqublu@gmail.com>
+Date:   Fri Feb 18 09:52:08 2022 +0100
+
+    Update assignment-git.log
+
+commit 4de97b2fcfa239c118046e012ee432ee48ccb808
+Author: netcamo <cyaqublu@gmail.com>
+Date:   Fri Feb 18 09:50:50 2022 +0100
+
+    Delete ingest_coredms.py
+
+commit da575c29ea48e8f557cfbcb0986ba4d6d1f7b009
+Author: netcamo <cyaqublu@gmail.com>
+Date:   Fri Feb 18 09:50:35 2022 +0100
+
+    Update dataingest.py
+
+commit 8820e370531714c15cfe7f424e41398c71cbf014
+Author: netcamo <cyaqublu@gmail.com>
+Date:   Fri Feb 18 09:33:18 2022 +0100
+
+    Delete trial.py
 
 commit 98c3970f8267e6411ffdfd2ae93496441462d634
 Author: yagublj1 <jeyhun.yagublu@aalto.fi>
