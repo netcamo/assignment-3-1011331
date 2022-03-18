@@ -8,6 +8,8 @@ import logging
 import pandas as pd
 from cassandra.query import BatchStatement
 from cassandra import ConsistencyLevel
+ 
+sys.path.append(os.getcwd())
 from mysimbdp import MySimBdp_CommonTool
 
 

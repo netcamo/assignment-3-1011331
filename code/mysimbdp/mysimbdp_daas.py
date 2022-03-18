@@ -33,8 +33,6 @@ def create_table(tenant_id):
   
   cluster = Cluster(['0.0.0.0'],port=9042)
   session = cluster.connect()
-  with open('filename.txt', 'w') as f:
-    print('This message will be written to a file.', file=f)
   print("Have connected")
   print("Tenant_id is "+tenant_id)      
   try:

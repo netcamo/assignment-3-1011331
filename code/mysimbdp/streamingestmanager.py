@@ -35,7 +35,7 @@ class ConsumerThread(threading.Thread):
             'content-type': 'application/json',
         }
         
-        response = requests.put('http://localhost:15672/api/vhosts/{}'.format(self._tenant['tenant_id']), headers=headers, auth=('mysimbdp', 'mysimbdp'))
+        response = requests.put('http://localhost:15672/api/vhosts/{}'.format(self._tenant['tenant_id']), headers=headers, auth=('rbmq', 'rbmq'))
 
         connection = pika.BlockingConnection(pika.ConnectionParameters(host=self._host, virtual_host=self._tenant['tenant_id'], credentials=CRENDENTIALS))
         channel = connection.channel()

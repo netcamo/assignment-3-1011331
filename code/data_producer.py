@@ -8,7 +8,7 @@ import requests
 
 tenants = { "tenants" :  [
     { "tenant_id": "tenant_1",
-        'file_path': os.getcwd() + '/../data/client-staging-input-directory/tenant_1/listings/data.csv',
+        'file_path': os.getcwd() + '/../data/client-staging-input-directory/tenant_1/listings/data_small.csv',
         'table_metadata': {
             "table_name": "listings",
             "primary_key": ["host_id", "id"],
