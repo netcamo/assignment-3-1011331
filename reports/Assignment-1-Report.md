@@ -2,13 +2,41 @@
 
 ## Part 1 - Design for streaming analytics
 
-1. *As a tenant, select a dataset suitable for streaming data analytics as a running scenario. Explain the dataset and why thedataset is suitable for streaming data analytics in your scenario. As a tenant, present at least two different analytics in the interest of the tenant: (i) a streaming analytics (tenantstreamapp) which analyzes streaming data from the tenant and (ii) a batch analytics which analyzes historical results outputted by the streaming analytics. The explanation should be at a high level to allow us to understand the data and possible analytics so that, later on, you can implement and use them in answering other questions.* 
+1. *As a tenant, select a dataset suitable for streaming data analytics as a running scenario. Explain the dataset and why thedataset is suitable for streaming data analytics in your scenario. As a tenant, present at least two different analytics in the interest of the tenant    : (i) a streaming analytics (tenantstreamapp) which analyzes streaming data from the tenant and (ii) a batch analytics which analyzes historical results outputted by the streaming analytics. The explanation should be at a high level to allow us to understand the data and possible analytics so that, later on, you can implement and use them in answering other questions.* 
     
-    
+
+    In order to run Streaming Analytics our data should be suitable for streaming. Such data should be continuous near real time thus data from IOT devices are perfect  set for our purposes. They can contain many measurement results continuously in real time and also can contain many different measurements which could give more opportunities to perform analytics on.
+
+    Because of these reasons BTS (Base Transceiver Stations) data suits our purposes because this data is a datastream from different base stations and each base station has different sensors and alarms. Data contains following columns:
+
+    * station_id: the id of the stations
+    * datapoint_id: the id of the sensor (data point)
+    * alarm_id: the id of the alarm
+    * event_time: the time at which the event occurs
+    * value: the value of the measurement of the datapoint
+    * valueThreshold: the threshold set for the alarm. Note that some threshold values are set to a default value of 999999.
+    * isActive: the alarm is active (true ) or not (false)
+
+    With such data there are many ways in which we could do analytics and I have chosen following analytics:
+
+    i) Streaming Analytics:  there is a column in our data called isActive where it is true if the sensor measurement is not normal and it causes some alarms. My Streaming Analytics will check if any alarm is active then it would appropriately notify the tenant about the alarm. This is very close to real scenario because if some alarm is raised in base station you would need to check it in order to fix the problems as soon as possible. So anayltics need to be provided in real time. 
+
+    II) Batch Analytics: We could analyze which station had most alarms raised for some defined time. It could help because if some station is raising many alarms in brief time then it could have serious problems and tenant would need to go and fix it urgently.
+
+
+
+
 2. *The tenant will send data through a messaging system, which provides stream data sources. Discuss and explain the
 following aspects for the streaming analytics: (i) should the analytics handle keyed or non-keyed data streams for the tenant data, and (ii) which types of delivery guarantees should be suitable for the stream analytics and why.* 
 
- 
+I will use Flink and RabbitMQ so I discuss this question related to these implementations.
+
+i) Flink supports Keyed and non-keyed data streams. It affects the parallelization of analytics because Flink partitions stream into substreams based on keys and if we process analytics parallelly then each processing node will have access only to its substream with keys. It will not have access to all stream. In our analytics situation it's perfect to use keyed data streams since we can choose to process data partitioned to substream using station_id as a key. This way if we decide to paralellyse processing then each processing node will have access to all data from same station and we can perform our batch analytics appropriately. And as an additional plus we will be able to parallelyse processing. Consequently Keyed data streams is best for our problem.
+
+ii)
+
+
+
 
 3. *Given streaming data from the tenant (selected before). Explain the following issues: (i) which types of time should be
 associated with stream data sources for the analytics and be considered in stream processing (if the data sources have no
