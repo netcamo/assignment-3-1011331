@@ -33,7 +33,7 @@ I will use Flink and RabbitMQ so I discuss this question related to these implem
 
 i) Flink supports Keyed and non-keyed data streams. It affects the parallelization of analytics because Flink partitions stream into substreams based on keys and if we process analytics parallelly then each processing node will have access only to its substream with keys. It will not have access to all stream. In our analytics situation it's perfect to use keyed data streams since we can choose to process data partitioned to substream using station_id as a key. This way if we decide to paralellyse processing then each processing node will have access to all data from same station and we can perform our batch analytics appropriately. And as an additional plus we will be able to parallelyse processing. Consequently Keyed data streams is best for our problem.
 
-ii)
+ii) Flink and RabbitMQ together supports END-to-END  exactly once delivery guarantee. It suits us best because we don't want same alarm to be processed more than once. Otherwise  This could lead to duplicate alarms be recorded many times and first of all maybe problem has already been fixed and we still get alarm but also it would affect our batch analytics since we would have more alarms for same station. END-to-END exactly once guarantees that same event (data) will be delivered and processed exactly once.
 
 
 
@@ -44,10 +44,22 @@ timestamps associated with events, then what would be your solution), (ii) which
 the analytics (if no window, then why), (iii) what could cause out-of-order data/records with your selected data in your
 running example, and (iv) will watermarks be needed or not, explain why. Explain these aspects and give examples.* 
 
-   
+
+i) In BTS data  we already have event_time  so we can associate this time with stream data when doing the analytics. In case that we don't have this event_time we could then choose receiving time to FLink or queue as our timestamp. which in real situation wouldn't differ much from event_time unless some of components go down for big amount of time.
+
+ii)  For our purpose we can use tumbling windows of Flink with specified window size. for example we could specify window size of 10 mins and thus we could perform oour batch analysis on that window. 
+
+iii) Our bts data is not ordered by time thus the data is already out of order. This out of order can also be increased because of some in process irregularities (some components going down for any reason ).
+
+iv) TODO
 
 
-4. *List performance metrics which would be important for the streaming analytics for your tenant cases. For each metric,
+
+
+
+
+
+1. *List performance metrics which would be important for the streaming analytics for your tenant cases. For each metric,
 explain its definition, how to measure it in your analytics/platform and why it is important for the analytics of the tenant.*
  
    
